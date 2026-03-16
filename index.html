@@ -403,8 +403,28 @@
       background: #fff;
       border-radius: var(--radius);
       border: 1px solid var(--blush);
-      padding: 1.2rem;
+      overflow: hidden;
       box-shadow: var(--shadow);
+    }
+
+    .menu-item-img {
+      height: 160px;
+      overflow: hidden;
+    }
+
+    .menu-item-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .3s;
+    }
+
+    .menu-item-card:hover .menu-item-img img {
+      transform: scale(1.05);
+    }
+
+    .menu-item-info {
+      padding: 1.2rem;
     }
 
     .menu-item-card h4 {
@@ -1361,58 +1381,85 @@
       <h3 class="menu-category-title">Coffees &amp; Hot Drinks</h3>
       <div class="menu-items">
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop" alt="Vanilla latte with foam art" /></div>
+          <div class="menu-item-info">
           <h4>Classic Vanilla Latte</h4>
           <span class="menu-price">$6.50</span>
           <p class="menu-desc">Creamy espresso with real vanilla bean &amp; steamed milk</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, whole milk (or oat/almond milk), vanilla bean extract, cane sugar. <strong>Contains:</strong> Dairy (unless substituted)</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&h=300&fit=crop" alt="Chocolate mocha with whipped cream" /></div>
+          <div class="menu-item-info">
           <h4>Chocolate Mocha</h4>
           <span class="menu-price">$7.00</span>
           <p class="menu-desc">Rich dark chocolate blended with espresso &amp; topped with whipped cream</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, whole milk, dark chocolate syrup (cocoa, sugar, vanilla), whipped cream. <strong>Contains:</strong> Dairy, Cocoa</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400&h=300&fit=crop" alt="Caramel macchiato with drizzle" /></div>
+          <div class="menu-item-info">
           <h4>Caramel Macchiato</h4>
           <span class="menu-price">$7.00</span>
           <p class="menu-desc">Layers of vanilla, milk, espresso &amp; buttery caramel drizzle</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, whole milk, vanilla syrup (sugar, water, vanilla extract), caramel sauce (sugar, butter, heavy cream, salt). <strong>Contains:</strong> Dairy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=400&h=300&fit=crop" alt="Lavender latte with purple tint" /></div>
+          <div class="menu-item-info">
           <h4>Honey Lavender Latte</h4>
           <span class="menu-price">$7.50</span>
           <p class="menu-desc">Floral &amp; sweet — made with real lavender buds &amp; local honey</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, steamed oat milk, dried lavender buds, local wildflower honey. <strong>Contains:</strong> Oat (gluten-free oat available)</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="Rose cappuccino with petals" /></div>
+          <div class="menu-item-info">
           <h4>Rose Petal Cappuccino</h4>
           <span class="menu-price">$8.00</span>
           <p class="menu-desc">Our signature drink — topped with edible rose petals &amp; rose syrup</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, steamed whole milk, rose water syrup (sugar, water, rose extract), dried edible rose petals. <strong>Contains:</strong> Dairy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop" alt="Golden turmeric latte" /></div>
+          <div class="menu-item-info">
           <h4>Golden Turmeric Latte</h4>
           <span class="menu-price">$7.00</span>
           <p class="menu-desc">Warm, earthy &amp; anti-inflammatory — perfect for a spa day</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Steamed coconut milk, turmeric powder, ground cinnamon, ground ginger, black pepper, maple syrup. <strong>Contains:</strong> Coconut</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=400&h=300&fit=crop" alt="Hot chocolate with marshmallows" /></div>
+          <div class="menu-item-info">
           <h4>Hot Chocolate (Classic or White)</h4>
           <span class="menu-price">$6.00</span>
           <p class="menu-desc">Thick, creamy &amp; topped with marshmallows and cocoa dust</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Whole milk, dark cocoa powder (or white chocolate chips: sugar, cocoa butter, milk powder), cane sugar, vanilla extract, mini marshmallows (sugar, corn syrup, gelatin). <strong>Contains:</strong> Dairy, Gelatin, may contain Soy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?w=400&h=300&fit=crop" alt="Chai tea latte with cinnamon" /></div>
+          <div class="menu-item-info">
           <h4>Chai Tea Latte</h4>
           <span class="menu-price">$6.50</span>
           <p class="menu-desc">Spiced black tea with steamed milk &amp; warm cinnamon</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Black tea, whole milk, cinnamon, cardamom, ginger, cloves, black pepper, cane sugar. <strong>Contains:</strong> Dairy, Caffeine</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop" alt="Herbal tea with honey" /></div>
+          <div class="menu-item-info">
           <h4>Herbal Tea Collection</h4>
           <span class="menu-price">$5.00</span>
           <p class="menu-desc">Chamomile, peppermint, hibiscus, or green tea with honey</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Varies — Chamomile flowers / Peppermint leaves / Dried hibiscus petals / Green tea leaves, optional honey. <strong>Contains:</strong> Caffeine-free (except green tea)</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1422,52 +1469,76 @@
       <h3 class="menu-category-title">Fresh-Baked Cookies</h3>
       <div class="menu-items">
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=300&fit=crop" alt="Chocolate chip cookies on tray" /></div>
+          <div class="menu-item-info">
           <h4>Classic Chocolate Chip Cookie</h4>
           <span class="menu-price">$3.50</span>
           <p class="menu-desc">Soft, chewy &amp; loaded with chocolate chips — baked fresh every hour</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour (wheat), butter, brown sugar, white sugar, eggs, vanilla extract, baking soda, salt, semi-sweet chocolate chips (cocoa, sugar, cocoa butter, soy lecithin). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Soy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1606913084603-3e7702b01627?w=400&h=300&fit=crop" alt="Double chocolate fudge cookies" /></div>
+          <div class="menu-item-info">
           <h4>Double Chocolate Fudge Cookie</h4>
           <span class="menu-price">$4.00</span>
           <p class="menu-desc">Intensely chocolatey with white &amp; dark chocolate chunks</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, cocoa powder, butter, sugar, eggs, vanilla, baking powder, salt, white chocolate chunks (sugar, cocoa butter, milk powder), dark chocolate chunks (cocoa, sugar). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop" alt="Decorated sugar cookies with icing" /></div>
+          <div class="menu-item-info">
           <h4>Sugar Cookie with Royal Icing</h4>
           <span class="menu-price">$4.00</span>
           <p class="menu-desc">Buttery &amp; decorated with beautiful pastel icing designs</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, powdered sugar, eggs, vanilla extract, almond extract, baking powder, salt. Icing: powdered sugar, meringue powder (egg whites), water, food coloring. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Tree Nuts (almond)</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=400&h=300&fit=crop" alt="Oatmeal raisin cookies" /></div>
+          <div class="menu-item-info">
           <h4>Oatmeal Raisin Cookie</h4>
           <span class="menu-price">$3.50</span>
           <p class="menu-desc">Hearty oats with plump raisins &amp; warm cinnamon</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Rolled oats, all-purpose flour, butter, brown sugar, eggs, raisins, cinnamon, nutmeg, baking soda, salt, vanilla extract. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=400&h=300&fit=crop" alt="Peanut butter cookies with crosshatch" /></div>
+          <div class="menu-item-info">
           <h4>Peanut Butter Cookie</h4>
           <span class="menu-price">$3.50</span>
           <p class="menu-desc">Rich &amp; crumbly with that classic crosshatch pattern</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Creamy peanut butter, flour, butter, sugar, brown sugar, eggs, baking soda, salt, vanilla. <strong>Contains:</strong> Peanuts, Wheat/Gluten, Dairy, Eggs</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&h=300&fit=crop" alt="Snickerdoodle cookies with cinnamon" /></div>
+          <div class="menu-item-info">
           <h4>Snickerdoodle Cookie</h4>
           <span class="menu-price">$3.50</span>
           <p class="menu-desc">Rolled in cinnamon sugar — soft &amp; pillowy</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, sugar, eggs, cream of tartar, baking soda, salt, cinnamon, vanilla extract. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1618923850107-d1a234ef73d1?w=400&h=300&fit=crop" alt="White chocolate macadamia cookies" /></div>
+          <div class="menu-item-info">
           <h4>Macadamia White Chocolate Cookie</h4>
           <span class="menu-price">$4.50</span>
           <p class="menu-desc">Luxury cookie with crunchy macadamia &amp; creamy white chocolate</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, sugar, brown sugar, eggs, macadamia nuts, white chocolate chips (sugar, cocoa butter, milk powder, soy lecithin), vanilla, baking soda, salt. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Tree Nuts, Soy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1625876981850-6381c27bcde6?w=400&h=300&fit=crop" alt="Vegan gluten-free dark chocolate cookies" /></div>
+          <div class="menu-item-info">
           <h4>Vegan Gluten-Free Cookie</h4>
           <span class="menu-price">$5.00</span>
           <p class="menu-desc">Almond flour base with dark chocolate — made for all dietary needs</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Almond flour, coconut oil, maple syrup, dark chocolate chips (dairy-free), flax eggs (ground flaxseed, water), vanilla extract, baking soda, salt. <strong>Contains:</strong> Tree Nuts (almond), Coconut. FREE of: Gluten, Dairy, Eggs, Soy</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1477,52 +1548,76 @@
       <h3 class="menu-category-title">Sodas &amp; Cold Drinks</h3>
       <div class="menu-items">
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?w=400&h=300&fit=crop" alt="Strawberry rose soda" /></div>
+          <div class="menu-item-info">
           <h4>Strawberry Rose Soda</h4>
           <span class="menu-price">$5.50</span>
           <p class="menu-desc">Sparkling, pink &amp; perfect — our signature salon soda</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Sparkling water, fresh strawberry puree, rose water, cane sugar syrup, fresh lemon juice. <strong>Contains:</strong> None of the top allergens</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?w=400&h=300&fit=crop" alt="Lavender lemonade" /></div>
+          <div class="menu-item-info">
           <h4>Lavender Lemonade</h4>
           <span class="menu-price">$5.00</span>
           <p class="menu-desc">Refreshing lemonade with a hint of floral lavender</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh lemon juice, water, cane sugar, dried lavender buds, ice. <strong>Contains:</strong> None of the top allergens</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=400&h=300&fit=crop" alt="Mango passion fruit soda" /></div>
+          <div class="menu-item-info">
           <h4>Mango Passion Fruit Soda</h4>
           <span class="menu-price">$5.50</span>
           <p class="menu-desc">Tropical burst of mango &amp; tangy passion fruit with fizz</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Sparkling water, mango puree, passion fruit juice, cane sugar, lime juice. <strong>Contains:</strong> None of the top allergens</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=400&h=300&fit=crop" alt="Italian cream soda" /></div>
+          <div class="menu-item-info">
           <h4>Italian Cream Soda</h4>
           <span class="menu-price">$6.00</span>
           <p class="menu-desc">Choose from vanilla, cherry, raspberry, or blue raspberry flavor</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Sparkling water, flavored syrup (sugar, water, natural flavoring), half-and-half cream, whipped cream, maraschino cherry. <strong>Contains:</strong> Dairy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=300&fit=crop" alt="Classic sodas with ice" /></div>
+          <div class="menu-item-info">
           <h4>Classic Sodas</h4>
           <span class="menu-price">$3.00</span>
           <p class="menu-desc">Coca-Cola, Sprite, Fanta Orange, Dr Pepper, Root Beer, Ginger Ale</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Carbonated water, high fructose corn syrup or sugar, caramel color, phosphoric acid, natural flavors, caffeine (Cola/Dr Pepper). <strong>Contains:</strong> May contain caffeine</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop" alt="Peach iced tea" /></div>
+          <div class="menu-item-info">
           <h4>Peach Iced Tea</h4>
           <span class="menu-price">$4.50</span>
           <p class="menu-desc">Brewed black tea with real peach nectar over ice</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Brewed black tea, peach nectar (peach puree, water, sugar), cane sugar, lemon juice, ice. <strong>Contains:</strong> Caffeine</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400&h=300&fit=crop" alt="Sparkling flavored water" /></div>
+          <div class="menu-item-info">
           <h4>Sparkling Water (Flavored)</h4>
           <span class="menu-price">$3.50</span>
           <p class="menu-desc">Lime, grapefruit, or cucumber mint — zero calories</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Carbonated water, natural fruit essence. <strong>Contains:</strong> None of the top allergens. Zero sugar, zero calories.</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=400&h=300&fit=crop" alt="Bubble tea with boba pearls" /></div>
+          <div class="menu-item-info">
           <h4>Bubble Tea / Boba</h4>
           <span class="menu-price">$7.00</span>
           <p class="menu-desc">Taro, matcha, brown sugar, mango, strawberry, or classic milk tea</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Brewed tea (black/green/oolong), milk or non-dairy creamer, sugar, tapioca pearls (tapioca starch, water, brown sugar, caramel color). Taro: taro powder, sugar. Matcha: matcha green tea powder. <strong>Contains:</strong> Dairy (unless substituted), may contain Gluten (some non-dairy creamers)</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1532,28 +1627,40 @@
       <h3 class="menu-category-title">Fresh Smoothies &amp; Juices</h3>
       <div class="menu-items">
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop" alt="Mixed berry smoothie" /></div>
+          <div class="menu-item-info">
           <h4>Berry Blast Smoothie</h4>
           <span class="menu-price">$7.50</span>
           <p class="menu-desc">Strawberries, blueberries, raspberries &amp; banana blended smooth</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh strawberries, blueberries, raspberries, banana, Greek yogurt, honey, ice. <strong>Contains:</strong> Dairy (yogurt)</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=400&h=300&fit=crop" alt="Tropical mango pineapple smoothie" /></div>
+          <div class="menu-item-info">
           <h4>Tropical Paradise Smoothie</h4>
           <span class="menu-price">$7.50</span>
           <p class="menu-desc">Mango, pineapple &amp; coconut — like a vacation in a cup</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh mango, pineapple chunks, coconut milk, banana, agave syrup, ice. <strong>Contains:</strong> Coconut</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400&h=300&fit=crop" alt="Green juice with kale and apple" /></div>
+          <div class="menu-item-info">
           <h4>Green Glow Juice</h4>
           <span class="menu-price">$8.00</span>
           <p class="menu-desc">Cold-pressed spinach, kale, apple, ginger &amp; lemon</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh spinach, kale, green apple, fresh ginger root, lemon juice, celery. <strong>Contains:</strong> None of the top allergens</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop" alt="Fresh squeezed orange juice" /></div>
+          <div class="menu-item-info">
           <h4>Fresh Orange Juice</h4>
           <span class="menu-price">$5.50</span>
           <p class="menu-desc">Squeezed fresh from whole oranges — no concentrate</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh-squeezed oranges. <strong>Contains:</strong> None of the top allergens (Citrus)</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1563,40 +1670,58 @@
       <h3 class="menu-category-title">Pastries &amp; Baked Goods</h3>
       <div class="menu-items">
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=400&h=300&fit=crop" alt="Golden butter croissant" /></div>
+          <div class="menu-item-info">
           <h4>Butter Croissant</h4>
           <span class="menu-price">$4.50</span>
           <p class="menu-desc">Flaky, golden &amp; buttery — baked fresh every morning</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, sugar, salt, yeast, whole milk, eggs. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=400&h=300&fit=crop" alt="Chocolate croissant pain au chocolat" /></div>
+          <div class="menu-item-info">
           <h4>Chocolate Croissant (Pain au Chocolat)</h4>
           <span class="menu-price">$5.00</span>
           <p class="menu-desc">Flaky pastry with two bars of rich dark chocolate inside</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, sugar, salt, yeast, milk, eggs, dark chocolate bars (cocoa mass, sugar, cocoa butter, soy lecithin). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Soy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=400&h=300&fit=crop" alt="Colorful French macarons" /></div>
+          <div class="menu-item-info">
           <h4>French Macarons (Box of 6)</h4>
           <span class="menu-price">$12.00</span>
           <p class="menu-desc">Rose, pistachio, vanilla, chocolate, strawberry &amp; lavender flavors</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Almond flour, powdered sugar, egg whites, granulated sugar, cream (butter, heavy cream), natural flavorings, food coloring. Varies by flavor — pistachio contains pistachio paste. <strong>Contains:</strong> Tree Nuts (almond, pistachio), Eggs, Dairy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop" alt="Glazed donuts with frosting" /></div>
+          <div class="menu-item-info">
           <h4>Glazed Donuts</h4>
           <span class="menu-price">$3.50</span>
           <p class="menu-desc">Fluffy yeast donuts with vanilla glaze, chocolate, or strawberry frosting</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, sugar, butter, eggs, yeast, milk, salt, vanilla. Glaze: powdered sugar, milk, vanilla. Chocolate: cocoa powder added. Strawberry: freeze-dried strawberry powder. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=400&h=300&fit=crop" alt="Assorted cupcakes with buttercream" /></div>
+          <div class="menu-item-info">
           <h4>Cupcakes (Assorted)</h4>
           <span class="menu-price">$5.00</span>
           <p class="menu-desc">Red velvet, vanilla, chocolate, lemon, or funfetti with buttercream</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, sugar, butter, eggs, milk, vanilla extract, baking powder, salt. Buttercream: butter, powdered sugar, vanilla, heavy cream. Red velvet: cocoa, red food color, buttermilk, white vinegar. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400&h=300&fit=crop" alt="Cake pops with chocolate and sprinkles" /></div>
+          <div class="menu-item-info">
           <h4>Cake Pops (3-Pack)</h4>
           <span class="menu-price">$6.00</span>
           <p class="menu-desc">Bite-sized cake balls on a stick, dipped in chocolate &amp; sprinkles</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Cake crumbs (flour, sugar, butter, eggs, vanilla), cream cheese frosting, chocolate candy coating (sugar, palm oil, cocoa, milk powder, soy lecithin), sprinkles (sugar, corn starch, food coloring). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Soy</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1606,28 +1731,40 @@
       <h3 class="menu-category-title">Chocolates &amp; Candy</h3>
       <div class="menu-items">
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=400&h=300&fit=crop" alt="Dark chocolate truffles dusted in cocoa" /></div>
+          <div class="menu-item-info">
           <h4>Dark Chocolate Truffles (4-Pack)</h4>
           <span class="menu-price">$8.00</span>
           <p class="menu-desc">Handmade 70% cacao truffles dusted in cocoa powder</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Dark chocolate (cocoa mass, sugar, cocoa butter), heavy cream, butter, cocoa powder. <strong>Contains:</strong> Dairy, Soy (may be present in chocolate)</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400&h=300&fit=crop" alt="White chocolate bark with strawberries" /></div>
+          <div class="menu-item-info">
           <h4>White Chocolate Strawberry Bark</h4>
           <span class="menu-price">$6.50</span>
           <p class="menu-desc">White chocolate studded with freeze-dried strawberries &amp; pink sprinkles</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> White chocolate (sugar, cocoa butter, whole milk powder, soy lecithin, vanilla), freeze-dried strawberries, pink sugar sprinkles. <strong>Contains:</strong> Dairy, Soy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=400&h=300&fit=crop" alt="Chocolate covered pretzels" /></div>
+          <div class="menu-item-info">
           <h4>Chocolate-Covered Pretzels</h4>
           <span class="menu-price">$5.00</span>
           <p class="menu-desc">Salty-sweet perfection with milk or dark chocolate</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Pretzel twists (wheat flour, salt, yeast, oil), chocolate coating (sugar, cocoa, milk powder, cocoa butter, soy lecithin). <strong>Contains:</strong> Wheat/Gluten, Dairy, Soy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400&h=300&fit=crop" alt="Colorful gummy bears" /></div>
+          <div class="menu-item-info">
           <h4>Gummy Bear Mix</h4>
           <span class="menu-price">$4.00</span>
           <p class="menu-desc">Colorful fruit-flavored gummy bears — a classic treat</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Sugar, glucose syrup, gelatin, citric acid, natural &amp; artificial flavors, fruit juice concentrates, beeswax. <strong>Contains:</strong> Gelatin (not vegetarian/vegan)</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1637,28 +1774,40 @@
       <h3 class="menu-category-title">Savory Bites &amp; Light Meals</h3>
       <div class="menu-items">
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop" alt="Turkey and Swiss sandwich on brioche" /></div>
+          <div class="menu-item-info">
           <h4>Mini Turkey &amp; Swiss Sandwich</h4>
           <span class="menu-price">$7.50</span>
           <p class="menu-desc">Sliced turkey, Swiss cheese, lettuce &amp; honey mustard on brioche</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Brioche roll (flour, butter, eggs, sugar, yeast), sliced turkey breast, Swiss cheese, romaine lettuce, honey mustard (mustard seed, vinegar, honey). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Mustard</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400&h=300&fit=crop" alt="Caprese bites with mozzarella and tomato" /></div>
+          <div class="menu-item-info">
           <h4>Caprese Bites</h4>
           <span class="menu-price">$6.00</span>
           <p class="menu-desc">Fresh mozzarella, cherry tomato &amp; basil on a toothpick with balsamic</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh mozzarella cheese, cherry tomatoes, fresh basil leaves, balsamic glaze (grape must, vinegar), olive oil, salt, pepper. <strong>Contains:</strong> Dairy</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=400&h=300&fit=crop" alt="Fresh mixed fruit bowl" /></div>
+          <div class="menu-item-info">
           <h4>Fresh Fruit Bowl</h4>
           <span class="menu-price">$6.50</span>
           <p class="menu-desc">Seasonal mix of strawberries, grapes, melon, pineapple &amp; blueberries</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh strawberries, red grapes, cantaloupe melon, pineapple, blueberries. <strong>Contains:</strong> None of the top allergens</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?w=400&h=300&fit=crop" alt="Hummus plate with veggies and pita" /></div>
+          <div class="menu-item-info">
           <h4>Hummus &amp; Veggie Plate</h4>
           <span class="menu-price">$7.00</span>
           <p class="menu-desc">Creamy hummus with carrots, cucumbers, bell peppers &amp; pita chips</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Hummus (chickpeas, tahini/sesame paste, lemon juice, garlic, olive oil, salt, cumin), baby carrots, cucumber slices, bell pepper strips, pita chips (wheat flour, oil, salt). <strong>Contains:</strong> Sesame, Wheat/Gluten</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1668,16 +1817,22 @@
       <h3 class="menu-category-title">Ice Cream &amp; Frozen Treats</h3>
       <div class="menu-items">
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400&h=300&fit=crop" alt="Artisan ice cream scoops in cone" /></div>
+          <div class="menu-item-info">
           <h4>Artisan Ice Cream Scoop</h4>
           <span class="menu-price">$5.00 / scoop</span>
           <p class="menu-desc">Flavors: Vanilla Bean, Chocolate Fudge, Strawberry, Cookies &amp; Cream, Mint Chip, Salted Caramel</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Cream, milk, sugar, egg yolks, vanilla/cocoa/fruit puree. Cookies &amp; Cream contains: wheat flour, cocoa. Mint Chip: peppermint extract, chocolate chips. <strong>Contains:</strong> Dairy, Eggs, and varies by flavor (Wheat/Gluten, Soy)</div>
+          </div>
         </div>
         <div class="menu-item-card">
+          <div class="menu-item-img"><img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?w=400&h=300&fit=crop" alt="Colorful fruit sorbet scoops" /></div>
+          <div class="menu-item-info">
           <h4>Dairy-Free Sorbet</h4>
           <span class="menu-price">$5.00 / scoop</span>
           <p class="menu-desc">Raspberry, mango, or lemon — totally dairy-free &amp; vegan</p>
           <div class="menu-ingredients"><strong>Ingredients:</strong> Fruit puree (raspberry/mango/lemon), sugar, water, lemon juice. <strong>Contains:</strong> None of the top allergens. Vegan &amp; dairy-free.</div>
+          </div>
         </div>
       </div>
     </div>
