@@ -515,6 +515,248 @@
       vertical-align: middle;
     }
 
+    /* ── LOCATION ── */
+    #location { background: var(--light); }
+
+    .location-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .location-info h3 { color: var(--rose); margin-bottom: .5rem; }
+    .location-info p { color: var(--mid); font-size: .92rem; margin-bottom: .8rem; }
+
+    .location-map {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      height: 350px;
+      background: var(--blush);
+    }
+
+    /* ── VIP & REWARDS ── */
+    #vip { background: linear-gradient(135deg, #1a1a2e, #2d1b3d); color: #fff; }
+    #vip .section-title { color: var(--gold); }
+    #vip .section-label { background: rgba(201,168,76,.2); color: var(--gold); }
+    #vip .divider { background: var(--gold); }
+
+    .vip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .vip-card {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(201,168,76,.3);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .vip-card .vip-icon { font-size: 2.2rem; display: block; margin-bottom: .6rem; }
+    .vip-card h4 { color: var(--gold); font-size: 1rem; margin-bottom: .3rem; }
+    .vip-card p { color: rgba(255,255,255,.7); font-size: .85rem; }
+    .vip-card .discount-tag {
+      display: inline-block;
+      background: var(--gold);
+      color: #1a1a2e;
+      font-size: .8rem;
+      font-weight: bold;
+      padding: .3rem .8rem;
+      border-radius: 99px;
+      margin-top: .6rem;
+    }
+
+    .rewards-section {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .rewards-section h3 { color: var(--gold); margin-bottom: 1rem; text-align: center; }
+
+    .rewards-tiers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .reward-tier {
+      background: rgba(255,255,255,.05);
+      border-radius: 10px;
+      padding: 1.2rem;
+      text-align: center;
+      border: 1px solid rgba(201,168,76,.15);
+    }
+
+    .reward-tier .tier-name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: .3rem;
+    }
+
+    .reward-tier .tier-desc { font-size: .82rem; color: rgba(255,255,255,.6); }
+
+    /* ── NAIL SERVICES ── */
+    #nails { background: var(--cream); }
+
+    .nail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .nail-card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--blush);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .nail-card h4 { color: var(--rose); font-size: 1.05rem; margin-bottom: .2rem; }
+    .nail-card .nail-price { color: var(--gold); font-weight: bold; font-size: .9rem; }
+    .nail-card .nail-desc { color: var(--mid); font-size: .88rem; margin: .4rem 0; }
+
+    .nail-card .nail-ingredients {
+      font-size: .78rem;
+      color: #7a5a5a;
+      background: var(--light);
+      padding: .6rem .8rem;
+      border-radius: 8px;
+      margin-top: .5rem;
+      line-height: 1.5;
+    }
+
+    .nail-card .nail-ingredients strong { color: var(--dark); }
+
+    /* ── MASSAGE SERVICES ── */
+    #massage { background: var(--light); }
+
+    .massage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .massage-card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--blush);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .massage-card h4 { color: var(--rose); font-size: 1.05rem; margin-bottom: .2rem; }
+    .massage-card .massage-price { color: var(--gold); font-weight: bold; font-size: .9rem; }
+    .massage-card .massage-desc { color: var(--mid); font-size: .88rem; margin: .4rem 0; }
+
+    .massage-card .massage-ingredients {
+      font-size: .78rem;
+      color: #7a5a5a;
+      background: var(--light);
+      padding: .6rem .8rem;
+      border-radius: 8px;
+      margin-top: .5rem;
+      line-height: 1.5;
+    }
+
+    .massage-card .massage-ingredients strong { color: var(--dark); }
+
+    /* ── OILS & CREAMS ── */
+    #oils { background: var(--cream); }
+
+    .oils-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .oil-card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--blush);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .oil-card h4 { color: var(--rose); font-size: 1rem; margin-bottom: .3rem; }
+    .oil-card .oil-type { color: var(--gold); font-weight: bold; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; }
+    .oil-card .oil-desc { color: var(--mid); font-size: .85rem; margin: .4rem 0; }
+
+    .oil-card .oil-ingredients {
+      font-size: .78rem;
+      color: #7a5a5a;
+      background: var(--light);
+      padding: .6rem .8rem;
+      border-radius: 8px;
+      margin-top: .5rem;
+      line-height: 1.5;
+    }
+
+    .oil-card .oil-ingredients strong { color: var(--dark); }
+
+    /* ── SALON DRAWING ── */
+    #salon-drawing { background: var(--light); }
+
+    .salon-svg-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--blush);
+    }
+
+    .salon-svg-wrapper svg { width: 100%; height: auto; }
+
+    /* ── PRICING TABLE ── */
+    #pricing { background: var(--cream); }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .pricing-card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--blush);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .pricing-card h4 {
+      color: var(--rose);
+      font-size: 1.05rem;
+      margin-bottom: .8rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid var(--blush);
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      padding: .4rem 0;
+      font-size: .88rem;
+      border-bottom: 1px dashed var(--blush);
+    }
+
+    .price-row:last-child { border-bottom: none; }
+    .price-row .service-name { color: var(--dark); }
+    .price-row .service-price { color: var(--gold); font-weight: bold; }
+
+    @media (max-width: 768px) {
+      .location-hero { grid-template-columns: 1fr; }
+    }
+
     /* ── WEEKEND PARTIES ── */
     #events {
       background: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600&h=800&fit=crop') center/cover no-repeat;
@@ -822,10 +1064,17 @@
   <span class="nav-logo">Amyra's Glimmer Garden</span>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#location">Location</a></li>
     <li><a href="#services">Rooms</a></li>
+    <li><a href="#nails">Nails</a></li>
+    <li><a href="#massage">Massage</a></li>
+    <li><a href="#oils">Oils &amp; Creams</a></li>
     <li><a href="#snackshop">Snack Shop</a></li>
     <li><a href="#facemasks">Face Masks</a></li>
-    <li><a href="#building">Our Building</a></li>
+    <li><a href="#vip">VIP</a></li>
+    <li><a href="#pricing">Prices</a></li>
+    <li><a href="#building">Building</a></li>
+    <li><a href="#salon-drawing">Salon Map</a></li>
     <li><a href="#events">Events</a></li>
     <li><a href="#rules">Rules</a></li>
     <li><a href="#safety">Safety</a></li>
@@ -838,7 +1087,7 @@
 <section class="hero">
   <span class="hero-badge">Welcome to Your Sanctuary</span>
   <h1>Amyra's<br/><span>Glimmer Garden</span> Salon</h1>
-  <p>Step in and bloom. We wash, style, glam, and dress you up — so you walk out feeling completely refreshed and radiant. Every beauty room you can dream of, all under one roof.</p>
+  <p>Seattle &amp; Kirkland's most luxurious celebrity-level salon. We wash, style, glam, and dress you up — so you walk out feeling completely refreshed and radiant. Every beauty room you can dream of, all under one roof.</p>
   <a href="#contact" class="btn-primary">Book Your Visit</a>
 </section>
 
@@ -850,8 +1099,8 @@
         <span class="section-label">Our Story</span>
         <h2>A Garden of Beauty &amp; Care</h2>
         <div class="divider"></div>
-        <p>Amyra's Glimmer Garden Salon is your personal retreat — a warm, welcoming space where every customer is treated like royalty. From the moment you walk through our doors, we focus on making you feel comfortable, fresh, and absolutely gorgeous.</p>
-        <p>Our multi-floor building has every kind of beauty room you could dream of, an in-house snack shop and cafe, elevator access, and a team dedicated to giving you an unforgettable experience every single visit.</p>
+        <p>Amyra's Glimmer Garden Salon is Seattle &amp; Kirkland's premier celebrity-level beauty retreat — a warm, welcoming space where every customer is treated like royalty. From the moment you walk through our doors, we focus on making you feel comfortable, fresh, and absolutely gorgeous.</p>
+        <p>Our 5-floor building has every kind of beauty room you could dream of, an in-house gourmet snack shop and cafe, VIP celebrity suites, a full nail art studio, luxury massage rooms, elevator access, and a team dedicated to giving you an unforgettable experience every single visit. Good customers earn credit rewards towards free services!</p>
         <p>We want you to feel so special that you keep coming back again and again. That's our mission.</p>
         <div class="about-stats">
           <div class="stat-box">
@@ -870,6 +1119,48 @@
       </div>
       <div class="about-visual">
         <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=500&fit=crop" alt="Beautiful salon interior with warm lighting and elegant chairs" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LOCATION ── -->
+<section id="location">
+  <div class="container">
+    <span class="section-label">Find Us</span>
+    <h2 class="section-title">Our Location</h2>
+    <div class="divider"></div>
+    <div class="location-hero">
+      <div class="location-info">
+        <h3>Seattle &amp; Kirkland, Washington</h3>
+        <p>Amyra's Glimmer Garden Salon is located in the heart of the Seattle-Kirkland area, easily accessible from downtown Seattle, Bellevue, Redmond, and all surrounding neighborhoods.</p>
+        <p>📍 <strong>Address:</strong> Kirkland, WA 98034 (Seattle Metropolitan Area)</p>
+        <p>🚗 <strong>Parking:</strong> Free luxury valet parking for all guests. VIP members get reserved covered parking spots.</p>
+        <p>🚌 <strong>Transit:</strong> Steps away from major bus routes. Ride-share drop-off zone at the front entrance.</p>
+        <p>🌲 <strong>Neighborhood:</strong> Surrounded by beautiful Pacific Northwest scenery — waterfront views, lush greenery, and charming local shops nearby.</p>
+        <p>✈️ <strong>For Out-of-Town Celebrities:</strong> We offer airport pickup service from SEA-TAC and private car service for VIP clients flying in for appointments.</p>
+      </div>
+      <div class="location-map">
+        <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+          <rect width="500" height="350" fill="#e8f4e8"/>
+          <rect x="30" y="80" width="440" height="240" rx="15" fill="#d4e8f0" stroke="#8ab4c8" stroke-width="2"/>
+          <text x="250" y="120" text-anchor="middle" font-family="Georgia" font-size="14" fill="#3a6b8a">Lake Washington</text>
+          <rect x="60" y="140" width="160" height="100" rx="10" fill="#f9f0f0" stroke="#c97b84" stroke-width="3"/>
+          <text x="140" y="180" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="bold" fill="#c97b84">Amyra's</text>
+          <text x="140" y="196" text-anchor="middle" font-family="Georgia" font-size="11" font-weight="bold" fill="#c97b84">Glimmer Garden</text>
+          <text x="140" y="212" text-anchor="middle" font-family="Georgia" font-size="10" fill="#c97b84">Salon</text>
+          <text x="140" y="228" text-anchor="middle" font-family="Georgia" font-size="9" fill="#6b4c4c">Kirkland, WA</text>
+          <circle cx="140" cy="165" r="5" fill="#c9a84c"/>
+          <rect x="300" y="160" width="100" height="60" rx="8" fill="#e0d0c0" stroke="#8a7a6a" stroke-width="1"/>
+          <text x="350" y="188" text-anchor="middle" font-family="Georgia" font-size="10" fill="#6b4c4c">Downtown</text>
+          <text x="350" y="200" text-anchor="middle" font-family="Georgia" font-size="10" fill="#6b4c4c">Seattle</text>
+          <line x1="220" y1="190" x2="300" y2="190" stroke="#c9a84c" stroke-width="2" stroke-dasharray="6,3"/>
+          <text x="260" y="183" text-anchor="middle" font-family="Georgia" font-size="8" fill="#c9a84c">15 min drive</text>
+          <rect x="320" y="260" width="80" height="40" rx="6" fill="#d0e0d0" stroke="#6a8a6a" stroke-width="1"/>
+          <text x="360" y="283" text-anchor="middle" font-family="Georgia" font-size="9" fill="#4a6a4a">Bellevue</text>
+          <text x="250" y="40" text-anchor="middle" font-family="Georgia" font-size="18" font-weight="bold" fill="#3a2a2a">Seattle / Kirkland Area</text>
+          <text x="250" y="60" text-anchor="middle" font-family="Georgia" font-size="11" fill="#6b4c4c">Pacific Northwest, Washington State</text>
+        </svg>
       </div>
     </div>
   </div>
@@ -1535,6 +1826,678 @@
   </div>
 </section>
 
+<!-- ── NAIL SERVICES ── -->
+<section id="nails">
+  <div class="container">
+    <span class="section-label">Nail Art Studio</span>
+    <h2 class="section-title">Nail Services &amp; Full Ingredient List</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Our 2nd floor Nail Art Studio offers every type of nail service imaginable. Every product we use is listed with full ingredients so you know exactly what touches your nails.</p>
+
+    <div class="nail-grid">
+
+      <div class="nail-card">
+        <h4>Classic Gel Manicure</h4>
+        <span class="nail-price">$45</span>
+        <p class="nail-desc">Long-lasting gel polish with cuticle care, nail shaping &amp; hand massage. Lasts 2-3 weeks with mirror-like shine.</p>
+        <div class="nail-ingredients"><strong>Products &amp; Ingredients:</strong><br>
+        <strong>Gel Base Coat:</strong> Di-HEMA Trimethylhexyl Dicarbamate, HEMA, hydroxypropyl methacrylate, hydroxycyclohexyl phenyl ketone, trimethylbenzoyl diphenylphosphine oxide.<br>
+        <strong>Gel Color Polish:</strong> Acrylates copolymer, trimethylbenzoyl diphenylphosphine oxide, CI pigments (varies by color), acetyl tributyl citrate.<br>
+        <strong>Gel Top Coat:</strong> Acrylates/methacrylic acid copolymer, photoinitiators, cellulose acetate butyrate.<br>
+        <strong>Cuticle Oil:</strong> Jojoba oil, vitamin E (tocopherol), sweet almond oil, lavender essential oil.<br>
+        <strong>Hand Cream:</strong> Shea butter, glycerin, coconut oil, aloe vera, vitamin E, fragrance.<br>
+        <strong>Potential Allergens:</strong> HEMA (common nail gel allergen — tell us if sensitive), tree nuts (almond oil in cuticle oil), coconut.</div>
+      </div>
+
+      <div class="nail-card">
+        <h4>Acrylic Full Set</h4>
+        <span class="nail-price">$65</span>
+        <p class="nail-desc">Sculpted acrylic nail extensions with your choice of shape — coffin, stiletto, almond, square, or oval.</p>
+        <div class="nail-ingredients"><strong>Products &amp; Ingredients:</strong><br>
+        <strong>Acrylic Liquid (Monomer):</strong> Ethyl methacrylate (EMA), dimethyl-p-toluidine, UV stabilizer, purple dye.<br>
+        <strong>Acrylic Powder (Polymer):</strong> Polymethyl methacrylate, benzoyl peroxide, titanium dioxide (white), pigments (for colors).<br>
+        <strong>Nail Primer:</strong> Methacrylic acid (acid-based) or ethyl cyanoacrylate (non-acid).<br>
+        <strong>Nail Dehydrator:</strong> Isopropyl alcohol, ethyl acetate.<br>
+        <strong>Potential Allergens:</strong> Methacrylate (tell us if you have sensitivity). We use EMA only — never MMA (which is harmful).</div>
+      </div>
+
+      <div class="nail-card">
+        <h4>Dip Powder Nails</h4>
+        <span class="nail-price">$55</span>
+        <p class="nail-desc">Lightweight, durable &amp; no UV lamp needed. Dip powder gives a natural, strong look.</p>
+        <div class="nail-ingredients"><strong>Products &amp; Ingredients:</strong><br>
+        <strong>Dip Base Resin:</strong> Ethyl cyanoacrylate, PMMA, acetyl tributyl citrate.<br>
+        <strong>Dip Powder:</strong> Acrylic ester polymer, benzoyl peroxide, titanium dioxide, calcium aluminum borosilicate (shimmer), colorants.<br>
+        <strong>Activator:</strong> Isopropyl alcohol, dimethyl-p-toluidine, n-butyl acetate.<br>
+        <strong>Top Coat:</strong> Nitrocellulose, ethyl acetate, isopropyl alcohol, acetyl tributyl citrate.<br>
+        <strong>Potential Allergens:</strong> Cyanoacrylate (similar to super glue — rare sensitivity). Generally well tolerated.</div>
+      </div>
+
+      <div class="nail-card">
+        <h4>Luxury Spa Pedicure</h4>
+        <span class="nail-price">$60</span>
+        <p class="nail-desc">Full pedicure with hot towel wrap, sugar scrub, callus treatment, foot massage &amp; gel polish.</p>
+        <div class="nail-ingredients"><strong>Products &amp; Ingredients:</strong><br>
+        <strong>Foot Soak:</strong> Epsom salt (magnesium sulfate), dried rose petals, tea tree essential oil, peppermint oil, warm water.<br>
+        <strong>Sugar Scrub:</strong> Raw cane sugar, coconut oil, jojoba oil, lemon zest, vanilla extract, vitamin E.<br>
+        <strong>Callus Softener:</strong> Urea (25%), salicylic acid (2%), aloe vera, tea tree oil.<br>
+        <strong>Foot Mask:</strong> Shea butter, cocoa butter, peppermint oil, eucalyptus oil, beeswax.<br>
+        <strong>Massage Cream:</strong> Sweet almond oil, shea butter, coconut oil, lavender essential oil, chamomile extract.<br>
+        <strong>Potential Allergens:</strong> Tree nuts (almond oil, shea, coconut), salicylic acid, beeswax (not vegan), essential oils.</div>
+      </div>
+
+      <div class="nail-card">
+        <h4>Chrome / Mirror Nails</h4>
+        <span class="nail-price">$75</span>
+        <p class="nail-desc">Ultra-reflective chrome powder rubbed onto gel polish for a mirror-like metallic finish.</p>
+        <div class="nail-ingredients"><strong>Products &amp; Ingredients:</strong><br>
+        <strong>Chrome Powder:</strong> Aluminum pigment, titanium dioxide, silica, tin oxide. Available in silver, gold, rose gold, holographic.<br>
+        <strong>No-Wipe Gel Top Coat:</strong> Acrylates copolymer, photoinitiators, trimethylbenzoyl diphenylphosphine oxide, silicone.<br>
+        <strong>Gel Base &amp; Color:</strong> Same as Classic Gel Manicure above.<br>
+        <strong>Potential Allergens:</strong> HEMA (gel), aluminum (very rare sensitivity). Chrome powder is cosmetic-grade &amp; skin-safe.</div>
+      </div>
+
+      <div class="nail-card">
+        <h4>3D Nail Art &amp; Custom Design</h4>
+        <span class="nail-price">$85 – $150+</span>
+        <p class="nail-desc">Hand-sculpted 3D flowers, charms, rhinestones, foils, hand-painted designs — true wearable art.</p>
+        <div class="nail-ingredients"><strong>Products &amp; Ingredients:</strong><br>
+        <strong>3D Acrylic Sculpting Powder:</strong> Polymethyl methacrylate, benzoyl peroxide, pigments.<br>
+        <strong>Nail Art Gel:</strong> Acrylates copolymer, silica, photoinitiators, pigments.<br>
+        <strong>Rhinestones:</strong> Glass crystal, aluminum foil backing (Swarovski or preciosa quality).<br>
+        <strong>Nail Foils:</strong> Polyester film, metallic coating, heat-activated adhesive.<br>
+        <strong>Nail Glue:</strong> Ethyl cyanoacrylate, PMMA.<br>
+        <strong>Hand-Painting:</strong> Acrylic nail art paint (water-based acrylic polymer, pigments, water).<br>
+        <strong>Potential Allergens:</strong> Methacrylate, cyanoacrylate. All gems &amp; decorations are hypoallergenic.</div>
+      </div>
+
+      <div class="nail-card">
+        <h4>Press-On Luxury Nails (Custom Made)</h4>
+        <span class="nail-price">$40 – $90</span>
+        <p class="nail-desc">Custom-sized, reusable luxury press-on nails made in-house. Take them home &amp; reuse!</p>
+        <div class="nail-ingredients"><strong>Products &amp; Ingredients:</strong><br>
+        <strong>Nail Tips:</strong> ABS plastic (acrylonitrile butadiene styrene) — lightweight, durable, hypoallergenic.<br>
+        <strong>Adhesive Tabs:</strong> Double-sided nail adhesive (acrylic-based, waterproof, gentle removal).<br>
+        <strong>Nail Glue (included):</strong> Ethyl cyanoacrylate, PMMA.<br>
+        <strong>Designs:</strong> Gel polish, chrome, rhinestones, foil — same ingredients as salon application.<br>
+        <strong>Potential Allergens:</strong> Cyanoacrylate (glue), same as above for design materials.</div>
+      </div>
+
+      <div class="nail-card">
+        <h4>Natural / Organic Manicure</h4>
+        <span class="nail-price">$50</span>
+        <p class="nail-desc">For clients who want chemical-free options. Uses "10-free" vegan polish &amp; all-natural products.</p>
+        <div class="nail-ingredients"><strong>Products &amp; Ingredients:</strong><br>
+        <strong>10-Free Nail Polish:</strong> Butyl acetate, ethyl acetate, nitrocellulose, adipic acid/neopentyl glycol, acetyl tributyl citrate, isopropyl alcohol, stearalkonium bentonite. FREE of: formaldehyde, toluene, DBP, camphor, formaldehyde resin, xylene, parabens, fragrances, phthalates, animal ingredients.<br>
+        <strong>Natural Cuticle Oil:</strong> Cold-pressed jojoba oil, organic argan oil, rosehip seed oil, vitamin E (plant-derived).<br>
+        <strong>Organic Hand Cream:</strong> Organic shea butter, organic coconut oil, aloe vera juice, jojoba oil, essential oils (lavender or rose).<br>
+        <strong>Potential Allergens:</strong> Tree nuts (argan, shea, coconut, jojoba). Fully vegan &amp; cruelty-free.</div>
+      </div>
+
+    </div>
+
+    <div class="allergen-notice">
+      <strong>Nail Allergy Notice:</strong> If you have ever had a reaction to gel nails, acrylics, or nail glue, please tell us immediately. We can use HEMA-free gel systems and hypoallergenic adhesives. We always perform a patch test for first-time acrylic and gel clients upon request. All nail stations are sanitized between every client with hospital-grade disinfectant.
+    </div>
+  </div>
+</section>
+
+<!-- ── MASSAGE SERVICES ── -->
+<section id="massage">
+  <div class="container">
+    <span class="section-label">Relaxation</span>
+    <h2 class="section-title">Massage Services &amp; Full Ingredient List</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Our 4th floor massage suites offer every type of massage with premium oils, creams &amp; lotions. Every single product and its ingredients are listed below.</p>
+
+    <div class="massage-grid">
+
+      <div class="massage-card">
+        <h4>Swedish Relaxation Massage</h4>
+        <span class="massage-price">$95 (60 min) / $140 (90 min)</span>
+        <p class="massage-desc">Gentle, flowing strokes to relieve stress &amp; promote deep relaxation. Our most popular massage.</p>
+        <div class="massage-ingredients"><strong>Oil Used — Sweet Almond Massage Oil Blend:</strong><br>
+        Sweet almond oil, grapeseed oil, lavender essential oil, chamomile essential oil, vitamin E (tocopherol).<br>
+        <strong>Warm Towel:</strong> Soaked in eucalyptus-infused water.<br>
+        <strong>Potential Allergens:</strong> Tree nuts (almond), essential oils (lavender, chamomile — ragweed cross-reactivity).</div>
+      </div>
+
+      <div class="massage-card">
+        <h4>Deep Tissue Massage</h4>
+        <span class="massage-price">$120 (60 min) / $170 (90 min)</span>
+        <p class="massage-desc">Firm pressure targeting deep muscle layers. Relieves chronic tension, knots &amp; sports injuries.</p>
+        <div class="massage-ingredients"><strong>Oil Used — Arnica &amp; Peppermint Deep Muscle Oil:</strong><br>
+        Grapeseed oil, arnica montana extract, peppermint essential oil, eucalyptus essential oil, rosemary essential oil, camphor, vitamin E.<br>
+        <strong>Muscle Relief Cream:</strong> Menthol (4%), methyl salicylate (10%), aloe vera gel, coconut oil, beeswax, capsaicin (trace).<br>
+        <strong>Potential Allergens:</strong> Aspirin/salicylate sensitivity (methyl salicylate), beeswax (not vegan), coconut, camphor, capsaicin (pepper-derived).</div>
+      </div>
+
+      <div class="massage-card">
+        <h4>Hot Stone Massage</h4>
+        <span class="massage-price">$140 (75 min)</span>
+        <p class="massage-desc">Heated basalt stones placed on key points while warm oil massage melts away all tension.</p>
+        <div class="massage-ingredients"><strong>Oil Used — Warm Coconut &amp; Ylang Ylang Oil:</strong><br>
+        Fractionated coconut oil, ylang ylang essential oil, sandalwood essential oil, jasmine essential oil, vitamin E.<br>
+        <strong>Stones:</strong> Basalt volcanic stones (natural mineral — no chemicals). Heated to 130-145°F.<br>
+        <strong>Potential Allergens:</strong> Coconut oil, essential oils (ylang ylang — rare skin sensitivity). Stones are hypoallergenic.</div>
+      </div>
+
+      <div class="massage-card">
+        <h4>Thai Massage</h4>
+        <span class="massage-price">$130 (90 min)</span>
+        <p class="massage-desc">Assisted stretching &amp; pressure point work — done fully clothed on a floor mat. Like assisted yoga.</p>
+        <div class="massage-ingredients"><strong>Balm Used — Thai Herbal Compress Balm:</strong><br>
+        Camphor, menthol, clove oil, turmeric, lemongrass, prai root (Zingiber cassumunar), tamarind leaf, coconut oil, beeswax.<br>
+        <strong>Herbal Compress Ball:</strong> Dried lemongrass, kaffir lime leaves, turmeric root, camphor crystals, prai root, wrapped in muslin cloth, steamed.<br>
+        <strong>Potential Allergens:</strong> Coconut, beeswax, clove oil, camphor. Strong herbal scent — tell us if you're scent-sensitive.</div>
+      </div>
+
+      <div class="massage-card">
+        <h4>Aromatherapy Massage</h4>
+        <span class="massage-price">$110 (60 min) / $155 (90 min)</span>
+        <p class="massage-desc">Customized essential oil blend chosen for your mood — calming, energizing, or balancing.</p>
+        <div class="massage-ingredients"><strong>Base Oil:</strong> Jojoba oil, sweet almond oil.<br>
+        <strong>Calming Blend:</strong> Lavender, Roman chamomile, bergamot, cedarwood essential oils.<br>
+        <strong>Energizing Blend:</strong> Peppermint, lemon, rosemary, ginger essential oils.<br>
+        <strong>Balancing Blend:</strong> Ylang ylang, frankincense, geranium, clary sage essential oils.<br>
+        <strong>Diffuser:</strong> Same blend is diffused in room via ultrasonic cool-mist diffuser (water + essential oils).<br>
+        <strong>Potential Allergens:</strong> Tree nuts (almond), citrus oils (bergamot, lemon — may cause photosensitivity, avoid direct sun 12 hrs after), essential oils per blend.</div>
+      </div>
+
+      <div class="massage-card">
+        <h4>Prenatal Massage</h4>
+        <span class="massage-price">$100 (60 min)</span>
+        <p class="massage-desc">Gentle, pregnancy-safe massage with special positioning pillows. Relieves back pain &amp; swelling.</p>
+        <div class="massage-ingredients"><strong>Oil Used — Pregnancy-Safe Gentle Oil:</strong><br>
+        Grapeseed oil (fragrance-free, hypoallergenic), vitamin E.<br>
+        <strong>Note:</strong> NO essential oils used (many are not safe during pregnancy). Fragrance-free, dye-free. We use only pure grapeseed oil for prenatal clients.<br>
+        <strong>Potential Allergens:</strong> Grape (extremely rare). This is our most hypoallergenic massage option.</div>
+      </div>
+
+      <div class="massage-card">
+        <h4>24K Gold Luxury Massage <span class="vip-badge">VIP</span></h4>
+        <span class="massage-price">$350 (90 min)</span>
+        <p class="massage-desc">The ultimate celebrity experience — warm 24K gold-infused oil, heated jade rollers &amp; champagne.</p>
+        <div class="massage-ingredients"><strong>Oil Used — 24K Gold Shimmer Body Oil:</strong><br>
+        Argan oil, jojoba oil, 24K gold flakes (cosmetic-grade), rosehip seed oil, vitamin C (ascorbic acid), vitamin E, jasmine essential oil, rose absolute essential oil.<br>
+        <strong>Jade Rollers:</strong> Natural nephrite jade stone (no chemicals).<br>
+        <strong>Body Butter Finish:</strong> Shea butter, cocoa butter, argan oil, gold mica shimmer, vanilla extract.<br>
+        <strong>Potential Allergens:</strong> Tree nuts (argan, shea), cocoa, essential oils (jasmine, rose). Gold is hypoallergenic for most people.</div>
+      </div>
+
+      <div class="massage-card">
+        <h4>Couples Massage</h4>
+        <span class="massage-price">$200 (60 min) / $280 (90 min)</span>
+        <p class="massage-desc">Side-by-side massage for two in our private couples suite with candles, music &amp; champagne.</p>
+        <div class="massage-ingredients"><strong>Oil Options:</strong> Choose any massage oil from our menu (Swedish, Aromatherapy, Hot Stone, or Gold). Each person can choose a different oil.<br>
+        <strong>Room Ambiance:</strong> Soy wax candles (soy wax, cotton wick, essential oil fragrance — no paraffin), rose petals, diffused essential oils.<br>
+        <strong>Complimentary:</strong> Two glasses of sparkling rose or non-alcoholic sparkling water with fruit.<br>
+        <strong>Potential Allergens:</strong> Per chosen oil blend. Soy (candles — minimal contact).</div>
+      </div>
+
+    </div>
+
+    <div class="allergen-notice">
+      <strong>Massage Allergy Notice:</strong> Please inform your massage therapist of ALL allergies (nut allergies, essential oil sensitivities, latex allergy, fragrance sensitivity) before your session. We carry fragrance-free, nut-free, and vegan oil alternatives for every massage type. Pregnant clients must inform us so we use only pregnancy-safe products and techniques.
+    </div>
+  </div>
+</section>
+
+<!-- ── OILS & CREAMS ── -->
+<section id="oils">
+  <div class="container">
+    <span class="section-label">Products We Use</span>
+    <h2 class="section-title">All Oils &amp; Creams — Full Ingredient Breakdown</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Every oil, cream, butter &amp; lotion used at Amyra's Glimmer Garden is listed here with full ingredients. We believe in 100% transparency so you can feel safe &amp; confident.</p>
+
+    <h3 class="menu-category-title" style="margin-top:1.5rem;">Carrier &amp; Massage Oils</h3>
+    <div class="oils-grid">
+      <div class="oil-card">
+        <span class="oil-type">Carrier Oil</span>
+        <h4>Sweet Almond Oil</h4>
+        <p class="oil-desc">Lightweight, moisturizing — our most-used carrier oil for massage &amp; cuticle care.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% cold-pressed Prunus Amygdalus Dulcis (sweet almond) oil. <strong>Allergens:</strong> Tree nuts (almond). Rich in vitamin E, oleic acid, linoleic acid.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Carrier Oil</span>
+        <h4>Coconut Oil (Fractionated)</h4>
+        <p class="oil-desc">Stays liquid, absorbs fast, non-greasy. Used in massage, hair treatments &amp; body scrubs.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> Caprylic/capric triglyceride (derived from Cocos nucifera/coconut). <strong>Allergens:</strong> Coconut (most people with tree nut allergies tolerate coconut, but disclose if allergic).</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Carrier Oil</span>
+        <h4>Jojoba Oil</h4>
+        <p class="oil-desc">Closest to skin's natural sebum. Excellent for face, nails &amp; sensitive skin treatments.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Simmondsia Chinensis (jojoba) seed oil. <strong>Allergens:</strong> Very rare — one of the most hypoallergenic oils. Technically a liquid wax, not a nut.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Carrier Oil</span>
+        <h4>Grapeseed Oil</h4>
+        <p class="oil-desc">Ultra-light, non-comedogenic. Our go-to for sensitive skin &amp; prenatal massage.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Vitis Vinifera (grape) seed oil. <strong>Allergens:</strong> Extremely rare grape allergy. Safe for most people. Rich in vitamin E &amp; omega-6.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Carrier Oil</span>
+        <h4>Argan Oil</h4>
+        <p class="oil-desc">Liquid gold for hair &amp; skin. Used in hair treatments, facials &amp; luxury massage.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Argania Spinosa (argan) kernel oil. Cold-pressed, organic, unrefined. <strong>Allergens:</strong> Tree nuts (argan is in the sapotaceae family — not a common allergen but disclose nut allergies).</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Carrier Oil</span>
+        <h4>Rosehip Seed Oil</h4>
+        <p class="oil-desc">Anti-aging superstar. Used in facials, face masks &amp; scar-fading treatments.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Rosa Canina (rosehip) seed oil. Cold-pressed. <strong>Allergens:</strong> Rose family — very rare allergy. Rich in retinol (vitamin A), vitamin C, omega-3 &amp; omega-6.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Carrier Oil</span>
+        <h4>Avocado Oil</h4>
+        <p class="oil-desc">Rich &amp; thick — used for deep moisturizing hair masks &amp; dry skin treatments.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Persea Gratissima (avocado) oil. Cold-pressed, unrefined. <strong>Allergens:</strong> Avocado (rare allergy, cross-reactivity with latex). Rich in oleic acid, vitamins A, D, E.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Carrier Oil</span>
+        <h4>Olive Oil (Extra Virgin)</h4>
+        <p class="oil-desc">Used in hair treatments, cuticle care &amp; traditional Mediterranean beauty treatments.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Olea Europaea (olive) fruit oil. Extra virgin, cold-pressed. <strong>Allergens:</strong> Olive allergy is very rare. Contains squalene, oleic acid, polyphenols.</div>
+      </div>
+    </div>
+
+    <h3 class="menu-category-title" style="margin-top:2rem;">Essential Oils (Used in Blends)</h3>
+    <div class="oils-grid">
+      <div class="oil-card">
+        <span class="oil-type">Essential Oil</span>
+        <h4>Lavender Essential Oil</h4>
+        <p class="oil-desc">Calming, soothing — used in almost every relaxation treatment.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Lavandula Angustifolia (lavender) flower oil. Steam-distilled. <strong>Allergens:</strong> Linalool, linalyl acetate (fragrance compounds — rare contact allergy). Never applied undiluted.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Essential Oil</span>
+        <h4>Tea Tree Essential Oil</h4>
+        <p class="oil-desc">Antibacterial &amp; antifungal — used in acne treatments, foot soaks &amp; scalp care.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Melaleuca Alternifolia (tea tree) leaf oil. Steam-distilled. <strong>Allergens:</strong> Terpinen-4-ol, 1,8-cineole. Can irritate sensitive skin if oxidized. Always diluted to 1-5%.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Essential Oil</span>
+        <h4>Peppermint Essential Oil</h4>
+        <p class="oil-desc">Cooling &amp; invigorating — used in foot treatments, scalp massage &amp; energizing blends.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Mentha Piperita (peppermint) oil. Steam-distilled. <strong>Allergens:</strong> Menthol, menthone. Creates a cooling sensation. Not used on face or near eyes. Not recommended during pregnancy.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Essential Oil</span>
+        <h4>Eucalyptus Essential Oil</h4>
+        <p class="oil-desc">Refreshing &amp; clearing — used in sauna, hot towels &amp; respiratory-supporting blends.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Eucalyptus Globulus leaf oil. Steam-distilled. <strong>Allergens:</strong> 1,8-cineole (eucalyptol). Strong scent — tell us if you're scent-sensitive. Not used on children under 10.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Essential Oil</span>
+        <h4>Rose Absolute Essential Oil</h4>
+        <p class="oil-desc">Our most luxurious oil — used in VIP treatments, bridal packages &amp; face serums.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Rosa Damascena flower extract. Solvent-extracted (absolute). <strong>Allergens:</strong> Citronellol, geraniol, nerol (fragrance compounds). Very rare sensitivity. One of the gentlest essential oils.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Essential Oil</span>
+        <h4>Lemon Essential Oil</h4>
+        <p class="oil-desc">Bright &amp; uplifting — used in energizing blends &amp; skin-brightening treatments.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> 100% Citrus Limon peel oil. Cold-pressed. <strong>Allergens:</strong> Limonene, citral. PHOTOTOXIC — do not expose skin to direct sunlight for 12 hours after use. Always diluted.</div>
+      </div>
+    </div>
+
+    <h3 class="menu-category-title" style="margin-top:2rem;">Creams, Butters &amp; Lotions</h3>
+    <div class="oils-grid">
+      <div class="oil-card">
+        <span class="oil-type">Body Cream</span>
+        <h4>Shea Butter Body Cream</h4>
+        <p class="oil-desc">Rich, thick moisturizer used after massage, waxing &amp; body treatments.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> Shea butter (Butyrospermum Parkii), coconut oil, glycerin, aloe vera juice, cetearyl alcohol (plant-derived emulsifier), vitamin E, lavender essential oil, phenoxyethanol (preservative). <strong>Allergens:</strong> Shea (tree nut family), coconut, phenoxyethanol (rare sensitivity).</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Body Cream</span>
+        <h4>Cocoa Butter Whipped Cream</h4>
+        <p class="oil-desc">Chocolate-scented luxury cream for deep hydration &amp; stretch mark prevention.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> Cocoa butter (Theobroma Cacao), shea butter, sweet almond oil, coconut oil, vitamin E, vanilla extract, beeswax. <strong>Allergens:</strong> Cocoa, tree nuts (almond, shea), coconut, beeswax (not vegan).</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Hand Cream</span>
+        <h4>Rose &amp; Glycerin Hand Cream</h4>
+        <p class="oil-desc">Lightweight, fast-absorbing — applied after every manicure.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> Purified water, glycerin, rosewater (Rosa Centifolia distillate), jojoba oil, cetyl alcohol (plant-derived), stearic acid, aloe vera, vitamin E, rose essential oil, phenoxyethanol. <strong>Allergens:</strong> Phenoxyethanol (rare). Very gentle formula — suitable for sensitive skin.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Body Lotion</span>
+        <h4>Coconut &amp; Vanilla Body Lotion</h4>
+        <p class="oil-desc">Light daily moisturizer available in treatment rooms and complimentary for all guests.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> Purified water, coconut oil, glycerin, cetearyl alcohol, shea butter, vanilla extract, vitamin E, dimethicone (silicone for smoothness), citric acid, phenoxyethanol. <strong>Allergens:</strong> Coconut, shea (tree nut family). Contains silicone (safe but some prefer silicone-free).</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Foot Cream</span>
+        <h4>Peppermint Foot Repair Cream</h4>
+        <p class="oil-desc">Extra-thick formula for cracked heels &amp; dry feet. Used in all pedicures.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> Urea (20%), shea butter, peppermint essential oil, tea tree essential oil, beeswax, glycerin, coconut oil, salicylic acid (2%), aloe vera, vitamin E. <strong>Allergens:</strong> Shea, coconut, beeswax, salicylate sensitivity, essential oils.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Scalp Cream</span>
+        <h4>Scalp Treatment Cream</h4>
+        <p class="oil-desc">Nourishing cream for scalp massages, dandruff treatment &amp; hair growth stimulation.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> Argan oil, castor oil (Ricinus Communis), peppermint essential oil, rosemary essential oil, biotin (vitamin B7), niacinamide (vitamin B3), panthenol (vitamin B5), glycerin, cetyl alcohol, purified water. <strong>Allergens:</strong> Argan (tree nut family), castor oil (rare allergy), essential oils.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Body Butter</span>
+        <h4>24K Gold Shimmer Body Butter <span class="vip-badge">VIP</span></h4>
+        <p class="oil-desc">Our most luxurious body product — leaves skin glowing with real gold shimmer.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> Shea butter, cocoa butter, argan oil, jojoba oil, 24K gold mica (cosmetic-grade gold shimmer), vitamin E, jasmine essential oil, rose essential oil, vanilla extract, beeswax. <strong>Allergens:</strong> Shea, cocoa, argan (tree nuts), beeswax (not vegan), essential oils.</div>
+      </div>
+      <div class="oil-card">
+        <span class="oil-type">Vegan Option</span>
+        <h4>Fragrance-Free Sensitive Lotion</h4>
+        <p class="oil-desc">Our most gentle product — for clients with allergies, sensitive skin, or fragrance sensitivity.</p>
+        <div class="oil-ingredients"><strong>Ingredients:</strong> Purified water, grapeseed oil, glycerin, cetearyl glucoside (plant-derived emulsifier), aloe vera, allantoin, panthenol (vitamin B5), xanthan gum. <strong>Allergens:</strong> None of the top allergens. Fragrance-free, nut-free, vegan, gluten-free, soy-free, dye-free.</div>
+      </div>
+    </div>
+
+    <div class="allergen-notice">
+      <strong>Product Allergy Notice:</strong> All products are available for inspection at our reception desk. We carry nut-free, vegan, fragrance-free, and hypoallergenic alternatives for EVERY service. Just ask! If you have a known contact allergy (nickel, latex, fragrance mix, balsam of Peru, etc.) please inform us before any treatment.
+    </div>
+  </div>
+</section>
+
+<!-- ── VIP & REWARDS ── -->
+<section id="vip">
+  <div class="container">
+    <span class="section-label">Exclusive</span>
+    <h2 class="section-title">VIP Membership &amp; Customer Rewards</h2>
+    <div class="divider"></div>
+    <p style="text-align:center; color: rgba(255,255,255,.7); max-width: 700px; margin: 0 auto 2rem;">At Amyra's Glimmer Garden, loyal customers get rewarded. Our VIP program gives you exclusive discounts, priority booking, free snacks &amp; drinks, and access to our celebrity-only Rooftop Penthouse.</p>
+
+    <div class="vip-grid">
+      <div class="vip-card">
+        <span class="vip-icon">👑</span>
+        <h4>VIP Diamond Membership</h4>
+        <p>Access to the Rooftop Penthouse, private butler, champagne service, priority booking &amp; exclusive celebrity events.</p>
+        <span class="discount-tag">25% OFF All Services</span>
+      </div>
+      <div class="vip-card">
+        <span class="vip-icon">🎁</span>
+        <h4>Customer Credit Rewards</h4>
+        <p>Every $100 you spend earns $10 in credit. Credits can be used on any service, snack, or product. Credits never expire!</p>
+        <span class="discount-tag">$10 Credit per $100 Spent</span>
+      </div>
+      <div class="vip-card">
+        <span class="vip-icon">🍩</span>
+        <h4>Free Snacks &amp; Drinks</h4>
+        <p>VIP members get unlimited complimentary coffee, tea, cookies &amp; snacks during every visit. Extra snack platters on request!</p>
+        <span class="discount-tag">FREE for VIPs</span>
+      </div>
+      <div class="vip-card">
+        <span class="vip-icon">🎂</span>
+        <h4>Birthday Special</h4>
+        <p>Get a FREE full glam package on your birthday month — hair, nails, makeup &amp; a cupcake with candle!</p>
+        <span class="discount-tag">FREE Birthday Glam</span>
+      </div>
+      <div class="vip-card">
+        <span class="vip-icon">👯</span>
+        <h4>Refer a Friend</h4>
+        <p>Refer a friend and you BOTH get $25 credit. No limit on referrals — refer 10 friends, get $250 in credit!</p>
+        <span class="discount-tag">$25 Credit Each</span>
+      </div>
+      <div class="vip-card">
+        <span class="vip-icon">📅</span>
+        <h4>Loyalty Punch Card</h4>
+        <p>Every 10th visit is FREE (up to $100 value). Applies to any single service of your choice.</p>
+        <span class="discount-tag">Every 10th Visit FREE</span>
+      </div>
+    </div>
+
+    <div class="rewards-section">
+      <h3>VIP Membership Tiers</h3>
+      <div class="rewards-tiers">
+        <div class="reward-tier">
+          <span class="tier-name" style="color: #cd7f32;">🥉 Bronze</span>
+          <p class="tier-desc">Spend $500+ total. Get 5% off all services, free coffee &amp; tea every visit, birthday discount.</p>
+        </div>
+        <div class="reward-tier">
+          <span class="tier-name" style="color: #c0c0c0;">🥈 Silver</span>
+          <p class="tier-desc">Spend $1,500+ total. Get 10% off all services, free snacks &amp; drinks, early access to events, priority booking.</p>
+        </div>
+        <div class="reward-tier">
+          <span class="tier-name" style="color: var(--gold);">🥇 Gold</span>
+          <p class="tier-desc">Spend $3,000+ total. Get 15% off all services, free products monthly, VIP lounge access, personal stylist.</p>
+        </div>
+        <div class="reward-tier">
+          <span class="tier-name" style="color: #b9f2ff;">💎 Diamond</span>
+          <p class="tier-desc">Spend $5,000+ total. Get 25% off everything, Rooftop Penthouse access, private butler, champagne, celebrity events, airport pickup.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRICING ── -->
+<section id="pricing">
+  <div class="container">
+    <span class="section-label">Our Prices</span>
+    <h2 class="section-title">Full Price List</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Transparent pricing for every service. VIP members receive additional discounts on top of these prices.</p>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h4>Hair Services</h4>
+        <div class="price-row"><span class="service-name">Women's Haircut &amp; Style</span><span class="service-price">$65</span></div>
+        <div class="price-row"><span class="service-name">Men's Haircut</span><span class="service-price">$35</span></div>
+        <div class="price-row"><span class="service-name">Kids' Haircut (under 12)</span><span class="service-price">$25</span></div>
+        <div class="price-row"><span class="service-name">Blowout / Blowdry</span><span class="service-price">$45</span></div>
+        <div class="price-row"><span class="service-name">Updo / Special Occasion</span><span class="service-price">$85</span></div>
+        <div class="price-row"><span class="service-name">Braids (French, Dutch, Fishtail)</span><span class="service-price">$55 – $120</span></div>
+        <div class="price-row"><span class="service-name">Hair Extensions (Tape-In)</span><span class="service-price">$300+</span></div>
+        <div class="price-row"><span class="service-name">Deep Conditioning Treatment</span><span class="service-price">$40</span></div>
+      </div>
+      <div class="pricing-card">
+        <h4>Color Services</h4>
+        <div class="price-row"><span class="service-name">Single Process Color</span><span class="service-price">$85</span></div>
+        <div class="price-row"><span class="service-name">Full Highlights</span><span class="service-price">$150</span></div>
+        <div class="price-row"><span class="service-name">Partial Highlights</span><span class="service-price">$100</span></div>
+        <div class="price-row"><span class="service-name">Balayage / Ombre</span><span class="service-price">$200+</span></div>
+        <div class="price-row"><span class="service-name">Vivid / Fashion Colors</span><span class="service-price">$180+</span></div>
+        <div class="price-row"><span class="service-name">Color Correction</span><span class="service-price">$250+</span></div>
+        <div class="price-row"><span class="service-name">Root Touch-Up</span><span class="service-price">$65</span></div>
+      </div>
+      <div class="pricing-card">
+        <h4>Nail Services</h4>
+        <div class="price-row"><span class="service-name">Classic Gel Manicure</span><span class="service-price">$45</span></div>
+        <div class="price-row"><span class="service-name">Acrylic Full Set</span><span class="service-price">$65</span></div>
+        <div class="price-row"><span class="service-name">Acrylic Fill</span><span class="service-price">$40</span></div>
+        <div class="price-row"><span class="service-name">Dip Powder Nails</span><span class="service-price">$55</span></div>
+        <div class="price-row"><span class="service-name">Chrome / Mirror Nails</span><span class="service-price">$75</span></div>
+        <div class="price-row"><span class="service-name">3D Nail Art &amp; Custom</span><span class="service-price">$85 – $150+</span></div>
+        <div class="price-row"><span class="service-name">Luxury Spa Pedicure</span><span class="service-price">$60</span></div>
+        <div class="price-row"><span class="service-name">Natural / Organic Mani</span><span class="service-price">$50</span></div>
+        <div class="price-row"><span class="service-name">Press-On Nails (Custom)</span><span class="service-price">$40 – $90</span></div>
+        <div class="price-row"><span class="service-name">Gel Removal</span><span class="service-price">$15</span></div>
+        <div class="price-row"><span class="service-name">Acrylic Removal</span><span class="service-price">$20</span></div>
+      </div>
+      <div class="pricing-card">
+        <h4>Massage Services</h4>
+        <div class="price-row"><span class="service-name">Swedish (60 min)</span><span class="service-price">$95</span></div>
+        <div class="price-row"><span class="service-name">Swedish (90 min)</span><span class="service-price">$140</span></div>
+        <div class="price-row"><span class="service-name">Deep Tissue (60 min)</span><span class="service-price">$120</span></div>
+        <div class="price-row"><span class="service-name">Deep Tissue (90 min)</span><span class="service-price">$170</span></div>
+        <div class="price-row"><span class="service-name">Hot Stone (75 min)</span><span class="service-price">$140</span></div>
+        <div class="price-row"><span class="service-name">Thai Massage (90 min)</span><span class="service-price">$130</span></div>
+        <div class="price-row"><span class="service-name">Aromatherapy (60 min)</span><span class="service-price">$110</span></div>
+        <div class="price-row"><span class="service-name">Prenatal (60 min)</span><span class="service-price">$100</span></div>
+        <div class="price-row"><span class="service-name">24K Gold Luxury (90 min)</span><span class="service-price">$350</span></div>
+        <div class="price-row"><span class="service-name">Couples (60 min)</span><span class="service-price">$200</span></div>
+      </div>
+      <div class="pricing-card">
+        <h4>Face Masks &amp; Facials</h4>
+        <div class="price-row"><span class="service-name">Cucumber &amp; Aloe Mask</span><span class="service-price">$55</span></div>
+        <div class="price-row"><span class="service-name">Oatmeal Lavender Mask</span><span class="service-price">$55</span></div>
+        <div class="price-row"><span class="service-name">Strawberry Cream Mask</span><span class="service-price">$60</span></div>
+        <div class="price-row"><span class="service-name">Charcoal Deep Cleanse</span><span class="service-price">$65</span></div>
+        <div class="price-row"><span class="service-name">Coffee Cocoa Mask</span><span class="service-price">$70</span></div>
+        <div class="price-row"><span class="service-name">Avocado Green Tea Mask</span><span class="service-price">$75</span></div>
+        <div class="price-row"><span class="service-name">Vitamin C Citrus Glow</span><span class="service-price">$80</span></div>
+        <div class="price-row"><span class="service-name">Rose Petal &amp; Honey</span><span class="service-price">$85</span></div>
+        <div class="price-row"><span class="service-name">Dead Sea Mud Detox</span><span class="service-price">$90</span></div>
+        <div class="price-row"><span class="service-name">Turmeric &amp; Saffron</span><span class="service-price">$95</span></div>
+        <div class="price-row"><span class="service-name">Hyaluronic Peptide</span><span class="service-price">$180</span></div>
+        <div class="price-row"><span class="service-name">24K Gold Luxe Glow</span><span class="service-price">$250</span></div>
+      </div>
+      <div class="pricing-card">
+        <h4>Lash, Brow &amp; Other</h4>
+        <div class="price-row"><span class="service-name">Lash Extensions (Classic)</span><span class="service-price">$150</span></div>
+        <div class="price-row"><span class="service-name">Lash Extensions (Volume)</span><span class="service-price">$200</span></div>
+        <div class="price-row"><span class="service-name">Lash Lift &amp; Tint</span><span class="service-price">$75</span></div>
+        <div class="price-row"><span class="service-name">Brow Lamination</span><span class="service-price">$65</span></div>
+        <div class="price-row"><span class="service-name">Brow Tint</span><span class="service-price">$30</span></div>
+        <div class="price-row"><span class="service-name">Full Body Wax</span><span class="service-price">$120</span></div>
+        <div class="price-row"><span class="service-name">Spray Tan</span><span class="service-price">$45</span></div>
+        <div class="price-row"><span class="service-name">Teeth Whitening</span><span class="service-price">$150</span></div>
+        <div class="price-row"><span class="service-name">Makeup Application</span><span class="service-price">$75</span></div>
+        <div class="price-row"><span class="service-name">Bridal Package (Full Day)</span><span class="service-price">$500+</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SALON DRAWING ── -->
+<section id="salon-drawing">
+  <div class="container">
+    <span class="section-label">Our Space</span>
+    <h2 class="section-title">Salon Building Map</h2>
+    <div class="divider"></div>
+    <p class="section-sub">A visual guide to our 5-floor luxury salon building in Kirkland, WA.</p>
+
+    <div class="salon-svg-wrapper">
+      <svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+        <!-- Building Outline -->
+        <rect x="100" y="50" width="600" height="820" rx="20" fill="#fdf6f0" stroke="#c97b84" stroke-width="3"/>
+
+        <!-- Rooftop decoration -->
+        <path d="M 100 70 Q 400 -20 700 70" fill="none" stroke="#c9a84c" stroke-width="2"/>
+        <text x="400" y="35" text-anchor="middle" font-family="Georgia" font-size="16" font-weight="bold" fill="#c9a84c">AMYRA'S GLIMMER GARDEN SALON</text>
+
+        <!-- Floor 5 - Rooftop VIP -->
+        <rect x="120" y="70" width="560" height="140" rx="10" fill="#1a1a2e" stroke="#c9a84c" stroke-width="2"/>
+        <text x="400" y="95" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="bold" fill="#c9a84c">FLOOR 5 — ROOFTOP VIP PENTHOUSE</text>
+        <rect x="135" y="105" width="75" height="45" rx="5" fill="#2d1b3d" stroke="#c9a84c" stroke-width="1"/>
+        <text x="172" y="125" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Diamond</text>
+        <text x="172" y="137" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Suite</text>
+        <rect x="220" y="105" width="75" height="45" rx="5" fill="#2d1b3d" stroke="#c9a84c" stroke-width="1"/>
+        <text x="257" y="125" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Champagne</text>
+        <text x="257" y="137" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Lounge</text>
+        <rect x="305" y="105" width="75" height="45" rx="5" fill="#2d1b3d" stroke="#c9a84c" stroke-width="1"/>
+        <text x="342" y="125" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Rooftop</text>
+        <text x="342" y="137" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Terrace</text>
+        <rect x="390" y="105" width="75" height="45" rx="5" fill="#2d1b3d" stroke="#c9a84c" stroke-width="1"/>
+        <text x="427" y="125" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Screening</text>
+        <text x="427" y="137" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Room</text>
+        <rect x="475" y="105" width="75" height="45" rx="5" fill="#2d1b3d" stroke="#c9a84c" stroke-width="1"/>
+        <text x="512" y="125" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Photo</text>
+        <text x="512" y="137" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Studio</text>
+        <rect x="560" y="105" width="75" height="45" rx="5" fill="#2d1b3d" stroke="#c9a84c" stroke-width="1"/>
+        <text x="597" y="125" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Gold</text>
+        <text x="597" y="137" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Jacuzzi</text>
+        <rect x="135" y="155" width="75" height="45" rx="5" fill="#2d1b3d" stroke="#c9a84c" stroke-width="1"/>
+        <text x="172" y="175" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Crystal</text>
+        <text x="172" y="187" text-anchor="middle" font-family="Georgia" font-size="7" fill="#c9a84c">Meditation</text>
+
+        <!-- Floor 4 - Spa -->
+        <rect x="120" y="220" width="560" height="140" rx="10" fill="#f5e6d0" stroke="#c9a84c" stroke-width="2"/>
+        <text x="400" y="245" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="bold" fill="#8a6a3a">FLOOR 4 — SPA &amp; WELLNESS</text>
+        <rect x="135" y="255" width="80" height="40" rx="5" fill="#fff" stroke="#c9a84c" stroke-width="1"/>
+        <text x="175" y="278" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Spa Suite</text>
+        <rect x="225" y="255" width="80" height="40" rx="5" fill="#fff" stroke="#c9a84c" stroke-width="1"/>
+        <text x="265" y="278" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Massage</text>
+        <rect x="315" y="255" width="80" height="40" rx="5" fill="#fff" stroke="#c9a84c" stroke-width="1"/>
+        <text x="355" y="278" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Hydrotherapy</text>
+        <rect x="405" y="255" width="80" height="40" rx="5" fill="#fff" stroke="#c9a84c" stroke-width="1"/>
+        <text x="445" y="278" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Zen Room</text>
+        <rect x="495" y="255" width="80" height="40" rx="5" fill="#fff" stroke="#c9a84c" stroke-width="1"/>
+        <text x="535" y="278" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Aromatherapy</text>
+        <rect x="135" y="305" width="80" height="40" rx="5" fill="#fff" stroke="#c9a84c" stroke-width="1"/>
+        <text x="175" y="325" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Face Mask</text>
+        <text x="175" y="337" text-anchor="middle" font-family="Georgia" font-size="7" fill="#6b4c4c">Bar</text>
+        <rect x="225" y="305" width="80" height="40" rx="5" fill="#fff" stroke="#c9a84c" stroke-width="1"/>
+        <text x="265" y="328" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Sauna</text>
+        <rect x="315" y="305" width="80" height="40" rx="5" fill="#fff" stroke="#c9a84c" stroke-width="1"/>
+        <text x="355" y="328" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Cryo</text>
+
+        <!-- Floor 3 - Events -->
+        <rect x="120" y="370" width="560" height="140" rx="10" fill="#f0e0f5" stroke="#b07acc" stroke-width="2"/>
+        <text x="400" y="395" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="bold" fill="#7a4a9a">FLOOR 3 — EVENTS &amp; BRIDAL</text>
+        <rect x="135" y="405" width="80" height="40" rx="5" fill="#fff" stroke="#b07acc" stroke-width="1"/>
+        <text x="175" y="428" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Party Hall</text>
+        <rect x="225" y="405" width="80" height="40" rx="5" fill="#fff" stroke="#b07acc" stroke-width="1"/>
+        <text x="265" y="428" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Bridal Suite</text>
+        <rect x="315" y="405" width="80" height="40" rx="5" fill="#fff" stroke="#b07acc" stroke-width="1"/>
+        <text x="355" y="425" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Bridal</text>
+        <text x="355" y="437" text-anchor="middle" font-family="Georgia" font-size="7" fill="#6b4c4c">Party Room</text>
+        <rect x="405" y="405" width="80" height="40" rx="5" fill="#fff" stroke="#b07acc" stroke-width="1"/>
+        <text x="445" y="428" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">VIP Lounge</text>
+        <rect x="495" y="405" width="80" height="40" rx="5" fill="#fff" stroke="#b07acc" stroke-width="1"/>
+        <text x="535" y="428" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Photo Studio</text>
+        <rect x="135" y="455" width="80" height="40" rx="5" fill="#fff" stroke="#b07acc" stroke-width="1"/>
+        <text x="175" y="478" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Celebration</text>
+        <rect x="225" y="455" width="80" height="40" rx="5" fill="#fff" stroke="#b07acc" stroke-width="1"/>
+        <text x="265" y="478" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">DJ Lounge</text>
+
+        <!-- Floor 2 - Glam -->
+        <rect x="120" y="520" width="560" height="140" rx="10" fill="#f9e8ea" stroke="#c97b84" stroke-width="2"/>
+        <text x="400" y="545" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="bold" fill="#c97b84">FLOOR 2 — GLAM &amp; STYLE</text>
+        <rect x="135" y="555" width="80" height="40" rx="5" fill="#fff" stroke="#c97b84" stroke-width="1"/>
+        <text x="175" y="578" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Makeup</text>
+        <rect x="225" y="555" width="80" height="40" rx="5" fill="#fff" stroke="#c97b84" stroke-width="1"/>
+        <text x="265" y="578" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Dress-Up</text>
+        <rect x="315" y="555" width="80" height="40" rx="5" fill="#fff" stroke="#c97b84" stroke-width="1"/>
+        <text x="355" y="578" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Nail Studio</text>
+        <rect x="405" y="555" width="80" height="40" rx="5" fill="#fff" stroke="#c97b84" stroke-width="1"/>
+        <text x="445" y="578" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Lash &amp; Brow</text>
+        <rect x="495" y="555" width="80" height="40" rx="5" fill="#fff" stroke="#c97b84" stroke-width="1"/>
+        <text x="535" y="578" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Tanning</text>
+        <rect x="135" y="605" width="80" height="40" rx="5" fill="#fff" stroke="#c97b84" stroke-width="1"/>
+        <text x="175" y="628" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Waxing</text>
+        <rect x="225" y="605" width="80" height="40" rx="5" fill="#fff" stroke="#c97b84" stroke-width="1"/>
+        <text x="265" y="628" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Color Lab</text>
+        <rect x="315" y="605" width="80" height="40" rx="5" fill="#fff" stroke="#c97b84" stroke-width="1"/>
+        <text x="355" y="628" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Skin Glow</text>
+
+        <!-- Floor 1 - Ground -->
+        <rect x="120" y="670" width="560" height="180" rx="10" fill="#f0ebe0" stroke="#8a6b6b" stroke-width="2"/>
+        <text x="400" y="695" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="bold" fill="#6b4c4c">FLOOR 1 — GROUND FLOOR</text>
+        <rect x="135" y="705" width="80" height="40" rx="5" fill="#fff" stroke="#8a6b6b" stroke-width="1"/>
+        <text x="175" y="728" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Reception</text>
+        <rect x="225" y="705" width="80" height="40" rx="5" fill="#fff" stroke="#8a6b6b" stroke-width="1"/>
+        <text x="265" y="728" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Wash &amp; Bath</text>
+        <rect x="315" y="705" width="80" height="40" rx="5" fill="#fff" stroke="#8a6b6b" stroke-width="1"/>
+        <text x="355" y="728" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Hair Styling</text>
+        <rect x="405" y="705" width="80" height="40" rx="5" fill="#fff" stroke="#8a6b6b" stroke-width="1"/>
+        <text x="445" y="728" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Care Room</text>
+        <rect x="495" y="705" width="80" height="40" rx="5" fill="#fff" stroke="#8a6b6b" stroke-width="1"/>
+        <text x="535" y="728" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Facials</text>
+        <rect x="135" y="755" width="80" height="40" rx="5" fill="#fff" stroke="#8a6b6b" stroke-width="1"/>
+        <text x="175" y="778" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Snack Shop</text>
+        <rect x="225" y="755" width="80" height="40" rx="5" fill="#fff" stroke="#8a6b6b" stroke-width="1"/>
+        <text x="265" y="778" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Boutique</text>
+        <rect x="315" y="755" width="80" height="40" rx="5" fill="#fff" stroke="#8a6b6b" stroke-width="1"/>
+        <text x="355" y="778" text-anchor="middle" font-family="Georgia" font-size="8" fill="#6b4c4c">Kids Corner</text>
+
+        <!-- Elevator -->
+        <rect x="620" y="80" width="40" height="760" rx="5" fill="#f2d4d7" stroke="#c97b84" stroke-width="2"/>
+        <text x="640" y="470" text-anchor="middle" font-family="Georgia" font-size="9" fill="#c97b84" transform="rotate(-90,640,470)">ELEVATOR — ALL FLOORS</text>
+
+        <!-- Entrance -->
+        <rect x="300" y="850" width="200" height="30" rx="8" fill="#c97b84"/>
+        <text x="400" y="870" text-anchor="middle" font-family="Georgia" font-size="12" font-weight="bold" fill="#fff">MAIN ENTRANCE</text>
+
+        <!-- Location label -->
+        <text x="400" y="895" text-anchor="middle" font-family="Georgia" font-size="11" fill="#6b4c4c">Kirkland, WA — Seattle Metropolitan Area</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
 <!-- ── BUILDING / FLOOR PLAN ── -->
 <section id="building">
   <div class="container">
@@ -2029,7 +2992,8 @@
       <div class="contact-info">
         <h3>Visit Us</h3>
         <p>📍 <strong>Amyra's Glimmer Garden Salon</strong></p>
-        <p>Your local beauty destination</p>
+        <p>Kirkland, WA 98034 — Seattle Metropolitan Area</p>
+        <p>Free valet parking &amp; VIP reserved spots available</p>
         <br/>
         <h3>Hours</h3>
         <p>🕐 <strong>Monday – Thursday:</strong> 9:00 AM – 7:00 PM</p>
