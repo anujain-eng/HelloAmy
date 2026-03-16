@@ -380,6 +380,141 @@
 
     .elevator-badge span { font-size: 1.4rem; }
 
+    /* ── DETAILED MENU ── */
+    .menu-category {
+      margin-top: 2.5rem;
+    }
+
+    .menu-category-title {
+      font-size: 1.3rem;
+      color: var(--rose);
+      margin-bottom: 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid var(--blush);
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .menu-item-card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--blush);
+      padding: 1.2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .menu-item-card h4 {
+      color: var(--dark);
+      font-size: 1rem;
+      margin-bottom: .3rem;
+    }
+
+    .menu-item-card .menu-price {
+      color: var(--gold);
+      font-weight: bold;
+      font-size: .9rem;
+    }
+
+    .menu-item-card .menu-desc {
+      color: var(--mid);
+      font-size: .85rem;
+      margin: .4rem 0;
+    }
+
+    .menu-item-card .menu-ingredients {
+      font-size: .78rem;
+      color: #7a5a5a;
+      background: var(--light);
+      padding: .6rem .8rem;
+      border-radius: 8px;
+      margin-top: .5rem;
+      line-height: 1.5;
+    }
+
+    .menu-item-card .menu-ingredients strong {
+      color: var(--dark);
+    }
+
+    .allergen-notice {
+      background: linear-gradient(135deg, #fff3cd, #ffeeba);
+      border: 1px solid #ffc107;
+      border-radius: var(--radius);
+      padding: 1.2rem 1.5rem;
+      margin-top: 2rem;
+      font-size: .88rem;
+      color: #856404;
+    }
+
+    .allergen-notice strong {
+      color: #664d03;
+    }
+
+    /* ── FACE MASKS ── */
+    #facemasks { background: var(--light); }
+
+    .mask-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .mask-card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--blush);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .mask-card h4 {
+      color: var(--rose);
+      font-size: 1.05rem;
+      margin-bottom: .3rem;
+    }
+
+    .mask-card .mask-price {
+      color: var(--gold);
+      font-weight: bold;
+      font-size: .9rem;
+      margin-bottom: .5rem;
+    }
+
+    .mask-card .mask-desc {
+      color: var(--mid);
+      font-size: .88rem;
+      margin-bottom: .6rem;
+    }
+
+    .mask-card .mask-ingredients {
+      font-size: .8rem;
+      color: #7a5a5a;
+      background: var(--light);
+      padding: .7rem .9rem;
+      border-radius: 8px;
+      line-height: 1.6;
+    }
+
+    .mask-card .mask-ingredients strong {
+      color: var(--dark);
+    }
+
+    .vip-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold), #e6c65a);
+      color: #3a2a00;
+      font-size: .7rem;
+      font-weight: bold;
+      padding: .2rem .6rem;
+      border-radius: 99px;
+      letter-spacing: .05em;
+      margin-left: .4rem;
+      vertical-align: middle;
+    }
+
     /* ── WEEKEND PARTIES ── */
     #events {
       background: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600&h=800&fit=crop') center/cover no-repeat;
@@ -689,6 +824,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#services">Rooms</a></li>
     <li><a href="#snackshop">Snack Shop</a></li>
+    <li><a href="#facemasks">Face Masks</a></li>
     <li><a href="#building">Our Building</a></li>
     <li><a href="#events">Events</a></li>
     <li><a href="#rules">Rules</a></li>
@@ -925,146 +1061,476 @@
 <section id="snackshop">
   <div class="container">
     <span class="section-label">Treat Yourself</span>
-    <h2 class="section-title">In-House Snack Shop &amp; Cafe</h2>
+    <h2 class="section-title">In-House Snack Shop &amp; Luxury Cafe</h2>
     <div class="divider"></div>
-    <p class="section-sub">Enjoy delicious treats while you get pampered. Our snack shop has all sorts of food and drinks for every guest — right inside the salon. Grab a bite while getting your nails or hair done!</p>
+    <p class="section-sub">Our gourmet cafe serves celebrity-level treats while you get pampered. Every item lists full ingredients so you can enjoy safely if you have allergies. All items are made fresh daily in our on-site kitchen.</p>
 
-    <div class="snack-grid">
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300&h=220&fit=crop" alt="Colorful frosted donuts" />
+    <!-- ── COFFEES & HOT DRINKS ── -->
+    <div class="menu-category">
+      <h3 class="menu-category-title">Coffees &amp; Hot Drinks</h3>
+      <div class="menu-items">
+        <div class="menu-item-card">
+          <h4>Classic Vanilla Latte</h4>
+          <span class="menu-price">$6.50</span>
+          <p class="menu-desc">Creamy espresso with real vanilla bean &amp; steamed milk</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, whole milk (or oat/almond milk), vanilla bean extract, cane sugar. <strong>Contains:</strong> Dairy (unless substituted)</div>
         </div>
-        <div class="snack-body">
-          <h4>Donuts</h4>
-          <p>Glazed &amp; frosted</p>
+        <div class="menu-item-card">
+          <h4>Chocolate Mocha</h4>
+          <span class="menu-price">$7.00</span>
+          <p class="menu-desc">Rich dark chocolate blended with espresso &amp; topped with whipped cream</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, whole milk, dark chocolate syrup (cocoa, sugar, vanilla), whipped cream. <strong>Contains:</strong> Dairy, Cocoa</div>
         </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=300&h=220&fit=crop" alt="Beautifully decorated cupcakes" />
+        <div class="menu-item-card">
+          <h4>Caramel Macchiato</h4>
+          <span class="menu-price">$7.00</span>
+          <p class="menu-desc">Layers of vanilla, milk, espresso &amp; buttery caramel drizzle</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, whole milk, vanilla syrup (sugar, water, vanilla extract), caramel sauce (sugar, butter, heavy cream, salt). <strong>Contains:</strong> Dairy</div>
         </div>
-        <div class="snack-body">
-          <h4>Cupcakes</h4>
-          <p>Assorted flavors</p>
+        <div class="menu-item-card">
+          <h4>Honey Lavender Latte</h4>
+          <span class="menu-price">$7.50</span>
+          <p class="menu-desc">Floral &amp; sweet — made with real lavender buds &amp; local honey</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, steamed oat milk, dried lavender buds, local wildflower honey. <strong>Contains:</strong> Oat (gluten-free oat available)</div>
         </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&h=220&fit=crop" alt="Latte art in a coffee cup" />
+        <div class="menu-item-card">
+          <h4>Rose Petal Cappuccino</h4>
+          <span class="menu-price">$8.00</span>
+          <p class="menu-desc">Our signature drink — topped with edible rose petals &amp; rose syrup</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Espresso, steamed whole milk, rose water syrup (sugar, water, rose extract), dried edible rose petals. <strong>Contains:</strong> Dairy</div>
         </div>
-        <div class="snack-body">
-          <h4>Coffee &amp; Lattes</h4>
-          <p>Hot or iced</p>
+        <div class="menu-item-card">
+          <h4>Golden Turmeric Latte</h4>
+          <span class="menu-price">$7.00</span>
+          <p class="menu-desc">Warm, earthy &amp; anti-inflammatory — perfect for a spa day</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Steamed coconut milk, turmeric powder, ground cinnamon, ground ginger, black pepper, maple syrup. <strong>Contains:</strong> Coconut</div>
         </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=300&h=220&fit=crop" alt="Fresh fruit smoothie bowls" />
+        <div class="menu-item-card">
+          <h4>Hot Chocolate (Classic or White)</h4>
+          <span class="menu-price">$6.00</span>
+          <p class="menu-desc">Thick, creamy &amp; topped with marshmallows and cocoa dust</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Whole milk, dark cocoa powder (or white chocolate chips: sugar, cocoa butter, milk powder), cane sugar, vanilla extract, mini marshmallows (sugar, corn syrup, gelatin). <strong>Contains:</strong> Dairy, Gelatin, may contain Soy</div>
         </div>
-        <div class="snack-body">
-          <h4>Smoothies</h4>
-          <p>Fresh fruit blends</p>
+        <div class="menu-item-card">
+          <h4>Chai Tea Latte</h4>
+          <span class="menu-price">$6.50</span>
+          <p class="menu-desc">Spiced black tea with steamed milk &amp; warm cinnamon</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Black tea, whole milk, cinnamon, cardamom, ginger, cloves, black pepper, cane sugar. <strong>Contains:</strong> Dairy, Caffeine</div>
         </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300&h=220&fit=crop" alt="Chocolate bars and truffles" />
-        </div>
-        <div class="snack-body">
-          <h4>Chocolate</h4>
-          <p>Bars &amp; truffles</p>
-        </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300&h=220&fit=crop" alt="Freshly baked cookies on a tray" />
-        </div>
-        <div class="snack-body">
-          <h4>Cookies</h4>
-          <p>Baked fresh daily</p>
-        </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=300&h=220&fit=crop" alt="Colorful ice cream scoops in a cone" />
-        </div>
-        <div class="snack-body">
-          <h4>Ice Cream</h4>
-          <p>From our freezer</p>
+        <div class="menu-item-card">
+          <h4>Herbal Tea Collection</h4>
+          <span class="menu-price">$5.00</span>
+          <p class="menu-desc">Chamomile, peppermint, hibiscus, or green tea with honey</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Varies — Chamomile flowers / Peppermint leaves / Dried hibiscus petals / Green tea leaves, optional honey. <strong>Contains:</strong> Caffeine-free (except green tea)</div>
         </div>
       </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=300&h=220&fit=crop" alt="Fresh croissants and pastries" />
+    </div>
+
+    <!-- ── COOKIES ── -->
+    <div class="menu-category">
+      <h3 class="menu-category-title">Fresh-Baked Cookies</h3>
+      <div class="menu-items">
+        <div class="menu-item-card">
+          <h4>Classic Chocolate Chip Cookie</h4>
+          <span class="menu-price">$3.50</span>
+          <p class="menu-desc">Soft, chewy &amp; loaded with chocolate chips — baked fresh every hour</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour (wheat), butter, brown sugar, white sugar, eggs, vanilla extract, baking soda, salt, semi-sweet chocolate chips (cocoa, sugar, cocoa butter, soy lecithin). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Soy</div>
         </div>
-        <div class="snack-body">
-          <h4>Pastries</h4>
-          <p>Croissants &amp; more</p>
+        <div class="menu-item-card">
+          <h4>Double Chocolate Fudge Cookie</h4>
+          <span class="menu-price">$4.00</span>
+          <p class="menu-desc">Intensely chocolatey with white &amp; dark chocolate chunks</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, cocoa powder, butter, sugar, eggs, vanilla, baking powder, salt, white chocolate chunks (sugar, cocoa butter, milk powder), dark chocolate chunks (cocoa, sugar). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
         </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=300&h=220&fit=crop" alt="Bubble tea with colorful boba" />
+        <div class="menu-item-card">
+          <h4>Sugar Cookie with Royal Icing</h4>
+          <span class="menu-price">$4.00</span>
+          <p class="menu-desc">Buttery &amp; decorated with beautiful pastel icing designs</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, powdered sugar, eggs, vanilla extract, almond extract, baking powder, salt. Icing: powdered sugar, meringue powder (egg whites), water, food coloring. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Tree Nuts (almond)</div>
         </div>
-        <div class="snack-body">
-          <h4>Bubble Tea</h4>
-          <p>Boba in every flavor</p>
+        <div class="menu-item-card">
+          <h4>Oatmeal Raisin Cookie</h4>
+          <span class="menu-price">$3.50</span>
+          <p class="menu-desc">Hearty oats with plump raisins &amp; warm cinnamon</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Rolled oats, all-purpose flour, butter, brown sugar, eggs, raisins, cinnamon, nutmeg, baking soda, salt, vanilla extract. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
         </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=220&fit=crop" alt="Fresh fruit salad bowl" />
+        <div class="menu-item-card">
+          <h4>Peanut Butter Cookie</h4>
+          <span class="menu-price">$3.50</span>
+          <p class="menu-desc">Rich &amp; crumbly with that classic crosshatch pattern</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Creamy peanut butter, flour, butter, sugar, brown sugar, eggs, baking soda, salt, vanilla. <strong>Contains:</strong> Peanuts, Wheat/Gluten, Dairy, Eggs</div>
         </div>
-        <div class="snack-body">
-          <h4>Fruit Bowls</h4>
-          <p>Fresh &amp; healthy</p>
+        <div class="menu-item-card">
+          <h4>Snickerdoodle Cookie</h4>
+          <span class="menu-price">$3.50</span>
+          <p class="menu-desc">Rolled in cinnamon sugar — soft &amp; pillowy</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, sugar, eggs, cream of tartar, baking soda, salt, cinnamon, vanilla extract. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
         </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=300&h=220&fit=crop" alt="Assorted macarons in pastel colors" />
+        <div class="menu-item-card">
+          <h4>Macadamia White Chocolate Cookie</h4>
+          <span class="menu-price">$4.50</span>
+          <p class="menu-desc">Luxury cookie with crunchy macadamia &amp; creamy white chocolate</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, sugar, brown sugar, eggs, macadamia nuts, white chocolate chips (sugar, cocoa butter, milk powder, soy lecithin), vanilla, baking soda, salt. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Tree Nuts, Soy</div>
         </div>
-        <div class="snack-body">
-          <h4>Macarons</h4>
-          <p>French &amp; colorful</p>
-        </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1571006917286-3dc31ab27ed7?w=300&h=220&fit=crop" alt="Fresh green juice" />
-        </div>
-        <div class="snack-body">
-          <h4>Fresh Juices</h4>
-          <p>Pressed to order</p>
-        </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=300&h=220&fit=crop" alt="Warm herbal tea with honey" />
-        </div>
-        <div class="snack-body">
-          <h4>Herbal Tea</h4>
-          <p>Calming blends</p>
-        </div>
-      </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=300&h=220&fit=crop" alt="Mini sandwiches and wraps" />
-        </div>
-        <div class="snack-body">
-          <h4>Mini Sandwiches</h4>
-          <p>Light &amp; savory</p>
+        <div class="menu-item-card">
+          <h4>Vegan Gluten-Free Cookie</h4>
+          <span class="menu-price">$5.00</span>
+          <p class="menu-desc">Almond flour base with dark chocolate — made for all dietary needs</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Almond flour, coconut oil, maple syrup, dark chocolate chips (dairy-free), flax eggs (ground flaxseed, water), vanilla extract, baking soda, salt. <strong>Contains:</strong> Tree Nuts (almond), Coconut. FREE of: Gluten, Dairy, Eggs, Soy</div>
         </div>
       </div>
-      <div class="snack-item">
-        <div class="snack-img">
-          <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=300&h=220&fit=crop" alt="Cake pops with sprinkles" />
+    </div>
+
+    <!-- ── SODAS & COLD DRINKS ── -->
+    <div class="menu-category">
+      <h3 class="menu-category-title">Sodas &amp; Cold Drinks</h3>
+      <div class="menu-items">
+        <div class="menu-item-card">
+          <h4>Strawberry Rose Soda</h4>
+          <span class="menu-price">$5.50</span>
+          <p class="menu-desc">Sparkling, pink &amp; perfect — our signature salon soda</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Sparkling water, fresh strawberry puree, rose water, cane sugar syrup, fresh lemon juice. <strong>Contains:</strong> None of the top allergens</div>
         </div>
-        <div class="snack-body">
-          <h4>Cake Pops</h4>
-          <p>Bite-sized treats</p>
+        <div class="menu-item-card">
+          <h4>Lavender Lemonade</h4>
+          <span class="menu-price">$5.00</span>
+          <p class="menu-desc">Refreshing lemonade with a hint of floral lavender</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh lemon juice, water, cane sugar, dried lavender buds, ice. <strong>Contains:</strong> None of the top allergens</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Mango Passion Fruit Soda</h4>
+          <span class="menu-price">$5.50</span>
+          <p class="menu-desc">Tropical burst of mango &amp; tangy passion fruit with fizz</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Sparkling water, mango puree, passion fruit juice, cane sugar, lime juice. <strong>Contains:</strong> None of the top allergens</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Italian Cream Soda</h4>
+          <span class="menu-price">$6.00</span>
+          <p class="menu-desc">Choose from vanilla, cherry, raspberry, or blue raspberry flavor</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Sparkling water, flavored syrup (sugar, water, natural flavoring), half-and-half cream, whipped cream, maraschino cherry. <strong>Contains:</strong> Dairy</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Classic Sodas</h4>
+          <span class="menu-price">$3.00</span>
+          <p class="menu-desc">Coca-Cola, Sprite, Fanta Orange, Dr Pepper, Root Beer, Ginger Ale</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Carbonated water, high fructose corn syrup or sugar, caramel color, phosphoric acid, natural flavors, caffeine (Cola/Dr Pepper). <strong>Contains:</strong> May contain caffeine</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Peach Iced Tea</h4>
+          <span class="menu-price">$4.50</span>
+          <p class="menu-desc">Brewed black tea with real peach nectar over ice</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Brewed black tea, peach nectar (peach puree, water, sugar), cane sugar, lemon juice, ice. <strong>Contains:</strong> Caffeine</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Sparkling Water (Flavored)</h4>
+          <span class="menu-price">$3.50</span>
+          <p class="menu-desc">Lime, grapefruit, or cucumber mint — zero calories</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Carbonated water, natural fruit essence. <strong>Contains:</strong> None of the top allergens. Zero sugar, zero calories.</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Bubble Tea / Boba</h4>
+          <span class="menu-price">$7.00</span>
+          <p class="menu-desc">Taro, matcha, brown sugar, mango, strawberry, or classic milk tea</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Brewed tea (black/green/oolong), milk or non-dairy creamer, sugar, tapioca pearls (tapioca starch, water, brown sugar, caramel color). Taro: taro powder, sugar. Matcha: matcha green tea powder. <strong>Contains:</strong> Dairy (unless substituted), may contain Gluten (some non-dairy creamers)</div>
         </div>
       </div>
+    </div>
+
+    <!-- ── SMOOTHIES & JUICES ── -->
+    <div class="menu-category">
+      <h3 class="menu-category-title">Fresh Smoothies &amp; Juices</h3>
+      <div class="menu-items">
+        <div class="menu-item-card">
+          <h4>Berry Blast Smoothie</h4>
+          <span class="menu-price">$7.50</span>
+          <p class="menu-desc">Strawberries, blueberries, raspberries &amp; banana blended smooth</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh strawberries, blueberries, raspberries, banana, Greek yogurt, honey, ice. <strong>Contains:</strong> Dairy (yogurt)</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Tropical Paradise Smoothie</h4>
+          <span class="menu-price">$7.50</span>
+          <p class="menu-desc">Mango, pineapple &amp; coconut — like a vacation in a cup</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh mango, pineapple chunks, coconut milk, banana, agave syrup, ice. <strong>Contains:</strong> Coconut</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Green Glow Juice</h4>
+          <span class="menu-price">$8.00</span>
+          <p class="menu-desc">Cold-pressed spinach, kale, apple, ginger &amp; lemon</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh spinach, kale, green apple, fresh ginger root, lemon juice, celery. <strong>Contains:</strong> None of the top allergens</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Fresh Orange Juice</h4>
+          <span class="menu-price">$5.50</span>
+          <p class="menu-desc">Squeezed fresh from whole oranges — no concentrate</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh-squeezed oranges. <strong>Contains:</strong> None of the top allergens (Citrus)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PASTRIES & BAKED GOODS ── -->
+    <div class="menu-category">
+      <h3 class="menu-category-title">Pastries &amp; Baked Goods</h3>
+      <div class="menu-items">
+        <div class="menu-item-card">
+          <h4>Butter Croissant</h4>
+          <span class="menu-price">$4.50</span>
+          <p class="menu-desc">Flaky, golden &amp; buttery — baked fresh every morning</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, sugar, salt, yeast, whole milk, eggs. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Chocolate Croissant (Pain au Chocolat)</h4>
+          <span class="menu-price">$5.00</span>
+          <p class="menu-desc">Flaky pastry with two bars of rich dark chocolate inside</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, butter, sugar, salt, yeast, milk, eggs, dark chocolate bars (cocoa mass, sugar, cocoa butter, soy lecithin). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Soy</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>French Macarons (Box of 6)</h4>
+          <span class="menu-price">$12.00</span>
+          <p class="menu-desc">Rose, pistachio, vanilla, chocolate, strawberry &amp; lavender flavors</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Almond flour, powdered sugar, egg whites, granulated sugar, cream (butter, heavy cream), natural flavorings, food coloring. Varies by flavor — pistachio contains pistachio paste. <strong>Contains:</strong> Tree Nuts (almond, pistachio), Eggs, Dairy</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Glazed Donuts</h4>
+          <span class="menu-price">$3.50</span>
+          <p class="menu-desc">Fluffy yeast donuts with vanilla glaze, chocolate, or strawberry frosting</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, sugar, butter, eggs, yeast, milk, salt, vanilla. Glaze: powdered sugar, milk, vanilla. Chocolate: cocoa powder added. Strawberry: freeze-dried strawberry powder. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Cupcakes (Assorted)</h4>
+          <span class="menu-price">$5.00</span>
+          <p class="menu-desc">Red velvet, vanilla, chocolate, lemon, or funfetti with buttercream</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> All-purpose flour, sugar, butter, eggs, milk, vanilla extract, baking powder, salt. Buttercream: butter, powdered sugar, vanilla, heavy cream. Red velvet: cocoa, red food color, buttermilk, white vinegar. <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Cake Pops (3-Pack)</h4>
+          <span class="menu-price">$6.00</span>
+          <p class="menu-desc">Bite-sized cake balls on a stick, dipped in chocolate &amp; sprinkles</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Cake crumbs (flour, sugar, butter, eggs, vanilla), cream cheese frosting, chocolate candy coating (sugar, palm oil, cocoa, milk powder, soy lecithin), sprinkles (sugar, corn starch, food coloring). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Soy</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CHOCOLATES & CANDY ── -->
+    <div class="menu-category">
+      <h3 class="menu-category-title">Chocolates &amp; Candy</h3>
+      <div class="menu-items">
+        <div class="menu-item-card">
+          <h4>Dark Chocolate Truffles (4-Pack)</h4>
+          <span class="menu-price">$8.00</span>
+          <p class="menu-desc">Handmade 70% cacao truffles dusted in cocoa powder</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Dark chocolate (cocoa mass, sugar, cocoa butter), heavy cream, butter, cocoa powder. <strong>Contains:</strong> Dairy, Soy (may be present in chocolate)</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>White Chocolate Strawberry Bark</h4>
+          <span class="menu-price">$6.50</span>
+          <p class="menu-desc">White chocolate studded with freeze-dried strawberries &amp; pink sprinkles</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> White chocolate (sugar, cocoa butter, whole milk powder, soy lecithin, vanilla), freeze-dried strawberries, pink sugar sprinkles. <strong>Contains:</strong> Dairy, Soy</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Chocolate-Covered Pretzels</h4>
+          <span class="menu-price">$5.00</span>
+          <p class="menu-desc">Salty-sweet perfection with milk or dark chocolate</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Pretzel twists (wheat flour, salt, yeast, oil), chocolate coating (sugar, cocoa, milk powder, cocoa butter, soy lecithin). <strong>Contains:</strong> Wheat/Gluten, Dairy, Soy</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Gummy Bear Mix</h4>
+          <span class="menu-price">$4.00</span>
+          <p class="menu-desc">Colorful fruit-flavored gummy bears — a classic treat</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Sugar, glucose syrup, gelatin, citric acid, natural &amp; artificial flavors, fruit juice concentrates, beeswax. <strong>Contains:</strong> Gelatin (not vegetarian/vegan)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SAVORY SNACKS ── -->
+    <div class="menu-category">
+      <h3 class="menu-category-title">Savory Bites &amp; Light Meals</h3>
+      <div class="menu-items">
+        <div class="menu-item-card">
+          <h4>Mini Turkey &amp; Swiss Sandwich</h4>
+          <span class="menu-price">$7.50</span>
+          <p class="menu-desc">Sliced turkey, Swiss cheese, lettuce &amp; honey mustard on brioche</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Brioche roll (flour, butter, eggs, sugar, yeast), sliced turkey breast, Swiss cheese, romaine lettuce, honey mustard (mustard seed, vinegar, honey). <strong>Contains:</strong> Wheat/Gluten, Dairy, Eggs, Mustard</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Caprese Bites</h4>
+          <span class="menu-price">$6.00</span>
+          <p class="menu-desc">Fresh mozzarella, cherry tomato &amp; basil on a toothpick with balsamic</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh mozzarella cheese, cherry tomatoes, fresh basil leaves, balsamic glaze (grape must, vinegar), olive oil, salt, pepper. <strong>Contains:</strong> Dairy</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Fresh Fruit Bowl</h4>
+          <span class="menu-price">$6.50</span>
+          <p class="menu-desc">Seasonal mix of strawberries, grapes, melon, pineapple &amp; blueberries</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Fresh strawberries, red grapes, cantaloupe melon, pineapple, blueberries. <strong>Contains:</strong> None of the top allergens</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Hummus &amp; Veggie Plate</h4>
+          <span class="menu-price">$7.00</span>
+          <p class="menu-desc">Creamy hummus with carrots, cucumbers, bell peppers &amp; pita chips</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Hummus (chickpeas, tahini/sesame paste, lemon juice, garlic, olive oil, salt, cumin), baby carrots, cucumber slices, bell pepper strips, pita chips (wheat flour, oil, salt). <strong>Contains:</strong> Sesame, Wheat/Gluten</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ICE CREAM ── -->
+    <div class="menu-category">
+      <h3 class="menu-category-title">Ice Cream &amp; Frozen Treats</h3>
+      <div class="menu-items">
+        <div class="menu-item-card">
+          <h4>Artisan Ice Cream Scoop</h4>
+          <span class="menu-price">$5.00 / scoop</span>
+          <p class="menu-desc">Flavors: Vanilla Bean, Chocolate Fudge, Strawberry, Cookies &amp; Cream, Mint Chip, Salted Caramel</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Cream, milk, sugar, egg yolks, vanilla/cocoa/fruit puree. Cookies &amp; Cream contains: wheat flour, cocoa. Mint Chip: peppermint extract, chocolate chips. <strong>Contains:</strong> Dairy, Eggs, and varies by flavor (Wheat/Gluten, Soy)</div>
+        </div>
+        <div class="menu-item-card">
+          <h4>Dairy-Free Sorbet</h4>
+          <span class="menu-price">$5.00 / scoop</span>
+          <p class="menu-desc">Raspberry, mango, or lemon — totally dairy-free &amp; vegan</p>
+          <div class="menu-ingredients"><strong>Ingredients:</strong> Fruit puree (raspberry/mango/lemon), sugar, water, lemon juice. <strong>Contains:</strong> None of the top allergens. Vegan &amp; dairy-free.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="allergen-notice">
+      <strong>Allergy Notice:</strong> Our kitchen handles products containing wheat/gluten, dairy, eggs, peanuts, tree nuts (almonds, macadamia, pistachio), soy, sesame, and coconut. Cross-contamination is possible. Please inform our staff of any allergies before ordering. We are happy to accommodate dietary restrictions and can prepare many items with substitutions. All ingredient lists are available in print at the cafe counter.
+    </div>
+  </div>
+</section>
+
+<!-- ── FACE MASKS & INGREDIENTS ── -->
+<section id="facemasks">
+  <div class="container">
+    <span class="section-label">Skin Care</span>
+    <h2 class="section-title">Our Luxury Face Masks &amp; Ingredients</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Every face mask at Amyra's Glimmer Garden is mixed fresh on our 4th floor Face Mask Bar. We list every single ingredient so you know exactly what goes on your skin. If you have any allergies, our specialists will customize a safe mask just for you.</p>
+
+    <div class="mask-grid">
+
+      <div class="mask-card">
+        <h4>24K Gold Luxe Glow Mask <span class="vip-badge">CELEBRITY FAVE</span></h4>
+        <span class="mask-price">$250 per session</span>
+        <p class="mask-desc">Our most luxurious mask — real 24K gold flakes for an anti-aging, radiant glow. Loved by celebrities.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> 24K gold leaf flakes, hyaluronic acid, rosehip seed oil, vitamin C (ascorbic acid), collagen peptides, aloe vera gel, jojoba oil, vitamin E (tocopherol), purified water, glycerin, xanthan gum.
+          <br><strong>Potential Allergens:</strong> None of the top food allergens. Patch test recommended for sensitive skin. Contains collagen (animal-derived — not vegan).
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Rose Petal &amp; Honey Hydrating Mask</h4>
+        <span class="mask-price">$85 per session</span>
+        <p class="mask-desc">Deep hydration with real crushed rose petals and raw organic honey. Leaves skin soft and dewy.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Dried rose petal powder (Rosa damascena), raw organic honey, aloe vera gel, rosewater (Rosa centifolia distillate), glycerin, rosehip seed oil, vitamin E (tocopherol), chamomile extract, purified water.
+          <br><strong>Potential Allergens:</strong> Honey (not vegan, may trigger reactions in those with bee/pollen allergies). Chamomile (related to ragweed — may cause reactions in those with ragweed allergy).
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Charcoal Deep Cleanse Mask</h4>
+        <span class="mask-price">$65 per session</span>
+        <p class="mask-desc">Pulls out impurities, unclogs pores &amp; fights blackheads. Great for oily skin.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Activated charcoal powder, bentonite clay, tea tree essential oil, witch hazel extract, aloe vera gel, purified water, glycerin, kaolin clay, rosemary extract, vitamin E (tocopherol).
+          <br><strong>Potential Allergens:</strong> Tea tree oil (may irritate very sensitive skin). Witch hazel (rare irritant). Generally hypoallergenic.
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Avocado &amp; Green Tea Nourishing Mask</h4>
+        <span class="mask-price">$75 per session</span>
+        <p class="mask-desc">Packed with antioxidants &amp; healthy fats for dry, tired skin.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Fresh avocado puree, matcha green tea powder, raw honey, Greek yogurt, olive oil, vitamin E (tocopherol), lemon juice (trace amount), oat flour (colloidal oatmeal), purified water.
+          <br><strong>Potential Allergens:</strong> Dairy (yogurt). Honey (bee product). Oat (contains avenin — safe for most, but not for those with oat allergy). Avocado (rare latex cross-reactivity). Lemon (citrus sensitivity).
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Turmeric &amp; Saffron Brightening Mask</h4>
+        <span class="mask-price">$95 per session</span>
+        <p class="mask-desc">Ancient beauty recipe — evens skin tone, reduces dark spots, gives a natural golden glow.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Turmeric powder (Curcuma longa), saffron threads (Crocus sativus), sandalwood powder, raw honey, full-fat yogurt, chickpea flour (besan), rosewater, lemon juice (trace), almond oil.
+          <br><strong>Potential Allergens:</strong> Dairy (yogurt). Honey. Tree nuts (almond oil). Chickpea flour (legume family). Lemon (citrus). Turmeric may temporarily stain very fair skin yellow.
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Cucumber &amp; Aloe Cooling Mask</h4>
+        <span class="mask-price">$55 per session</span>
+        <p class="mask-desc">Ultra-soothing &amp; cooling — perfect for sunburned, irritated, or sensitive skin.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Fresh cucumber puree, aloe vera gel (99% pure), hyaluronic acid, chamomile extract, green tea extract, glycerin, purified water, allantoin, panthenol (vitamin B5).
+          <br><strong>Potential Allergens:</strong> Chamomile (ragweed cross-reactivity). Otherwise very gentle — our most hypoallergenic option.
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Coffee &amp; Cocoa Energizing Mask</h4>
+        <span class="mask-price">$70 per session</span>
+        <p class="mask-desc">Wake up your skin! Reduces puffiness, boosts circulation &amp; smells amazing.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Finely ground arabica coffee, raw cocoa powder, coconut oil, raw honey, brown sugar (gentle exfoliant), vanilla extract, cinnamon (trace amount), vitamin E (tocopherol).
+          <br><strong>Potential Allergens:</strong> Coconut. Honey. Cocoa (chocolate family). Cinnamon (rare contact dermatitis). Caffeine (absorbed through skin in small amounts).
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Vitamin C Citrus Glow Mask</h4>
+        <span class="mask-price">$80 per session</span>
+        <p class="mask-desc">Brightens, fights fine lines &amp; gives you that "just woke up glowing" look.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Vitamin C serum (L-ascorbic acid 15%), fresh orange zest, lemon juice (diluted), niacinamide (vitamin B3), hyaluronic acid, ferulic acid, aloe vera gel, jojoba oil, purified water.
+          <br><strong>Potential Allergens:</strong> Citrus (orange, lemon — may cause photosensitivity, avoid sun after treatment). Ferulic acid derived from rice bran (generally safe).
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Dead Sea Mud Detox Mask</h4>
+        <span class="mask-price">$90 per session</span>
+        <p class="mask-desc">Mineral-rich Dead Sea mud that detoxifies, tightens pores &amp; leaves skin silky smooth.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Dead Sea mineral mud, shea butter, sweet almond oil, eucalyptus essential oil, lavender essential oil, sea salt minerals (magnesium, calcium, potassium), glycerin, purified water, kaolin clay.
+          <br><strong>Potential Allergens:</strong> Tree nuts (almond oil). Essential oils (eucalyptus, lavender — rare skin sensitivity). Shea (tree nut family, though most with tree nut allergies tolerate shea).
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Strawberry &amp; Cream Exfoliating Mask</h4>
+        <span class="mask-price">$60 per session</span>
+        <p class="mask-desc">Gentle fruit acid exfoliation with real strawberries — smells like dessert!</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Fresh strawberry puree, heavy cream, raw honey, oat flour (colloidal oatmeal), lemon juice (trace), sugar crystals (fine exfoliant), vanilla extract, vitamin E.
+          <br><strong>Potential Allergens:</strong> Dairy (cream). Honey. Oat. Strawberry (rare allergy, related to birch pollen). Lemon (citrus).
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Hyaluronic Acid &amp; Peptide Age-Defying Mask <span class="vip-badge">PREMIUM</span></h4>
+        <span class="mask-price">$180 per session</span>
+        <p class="mask-desc">Clinical-grade anti-aging treatment. Plumps fine lines, firms skin &amp; boosts collagen.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Hyaluronic acid (multi-weight: high, medium, low molecular), copper peptides, retinol (vitamin A, 0.5%), niacinamide (vitamin B3), squalane (olive-derived), ceramides, aloe vera gel, green tea extract, purified water, phenoxyethanol (preservative).
+          <br><strong>Potential Allergens:</strong> Retinol (not recommended during pregnancy). Phenoxyethanol (rare sensitivity). Generally well-tolerated. Patch test required for first-time use.
+        </div>
+      </div>
+
+      <div class="mask-card">
+        <h4>Oatmeal &amp; Lavender Sensitive Skin Mask</h4>
+        <span class="mask-price">$55 per session</span>
+        <p class="mask-desc">Our gentlest mask — designed specifically for reactive, redness-prone &amp; eczema-prone skin.</p>
+        <div class="mask-ingredients">
+          <strong>Ingredients:</strong> Colloidal oatmeal, lavender essential oil (diluted), aloe vera gel, chamomile extract, calendula oil, shea butter, glycerin, purified water, allantoin.
+          <br><strong>Potential Allergens:</strong> Oat (contains avenin). Chamomile &amp; calendula (daisy family — ragweed cross-reactivity). Lavender oil (rare contact allergy). Shea (tree nut family). Our gentlest formula overall.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="allergen-notice">
+      <strong>Skin Allergy Notice:</strong> All face masks are freshly prepared by our licensed estheticians. Before your first treatment, we perform a small patch test behind your ear or on your inner wrist to check for reactions. Please tell us about ANY skin sensitivities, allergies (food or topical), medications (especially retinoids or blood thinners), or if you are pregnant or nursing. We can customize any mask by removing or substituting ingredients. Your safety is our top priority.
     </div>
   </div>
 </section>
@@ -1078,37 +1544,143 @@
     <p class="section-sub">Our salon is a multi-floor building with spacious rooms, elevator access, and everything you need for the ultimate beauty experience.</p>
 
     <div class="building-wrapper">
-      <!-- Floor 3 -->
+
+      <!-- Floor 5 — Rooftop -->
+      <div class="floor-card">
+        <div class="floor-header" style="background: linear-gradient(135deg, #1a1a2e, #4a3060);">
+          <span class="floor-num">5</span>
+          Rooftop — Celebrity VIP Penthouse <span class="vip-badge">VIP ONLY</span>
+        </div>
+        <div class="floor-rooms">
+          <div class="floor-room">
+            <span class="fr-icon">👑</span>
+            <span class="fr-name">VIP Diamond Suite</span>
+            <span class="fr-desc">Private luxury room for A-list clients — $5,000+ experience with personal butler</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🥂</span>
+            <span class="fr-name">Champagne Lounge</span>
+            <span class="fr-desc">Dom Perignon, Moet, rose champagne — served on velvet couches</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🌙</span>
+            <span class="fr-name">Rooftop Terrace</span>
+            <span class="fr-desc">Open-air relaxation with city skyline views &amp; twinkling lights</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🎬</span>
+            <span class="fr-name">Private Screening Room</span>
+            <span class="fr-desc">Watch movies on a big screen while getting pampered</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">📸</span>
+            <span class="fr-name">Red Carpet Photo Studio</span>
+            <span class="fr-desc">Professional photographer, ring lights, custom backdrops for the perfect shot</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🛁</span>
+            <span class="fr-name">Gold Jacuzzi Suite</span>
+            <span class="fr-desc">Gold-tiled jacuzzi with rose petals, essential oils &amp; champagne service</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">💎</span>
+            <span class="fr-name">Crystal Meditation Room</span>
+            <span class="fr-desc">Amethyst walls, sound bowls, and private guided meditation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floor 4 -->
       <div class="floor-card">
         <div class="floor-header" style="background: linear-gradient(135deg, var(--gold), #d4b85c);">
+          <span class="floor-num">4</span>
+          Fourth Floor — Spa, Wellness &amp; Relaxation
+        </div>
+        <div class="floor-rooms">
+          <div class="floor-room">
+            <span class="fr-icon">🧖</span>
+            <span class="fr-name">Luxury Spa Suite</span>
+            <span class="fr-desc">Full-body spa treatments with heated marble beds</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🧊</span>
+            <span class="fr-name">Cryo Chamber</span>
+            <span class="fr-desc">Cryotherapy for skin tightening &amp; rejuvenation</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🌊</span>
+            <span class="fr-name">Hydrotherapy Pool</span>
+            <span class="fr-desc">Warm mineral water jets for total body relaxation</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🧘</span>
+            <span class="fr-name">Meditation &amp; Zen Room</span>
+            <span class="fr-desc">Himalayan salt walls, soft music &amp; aromatherapy mist</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🌿</span>
+            <span class="fr-name">Aromatherapy Room</span>
+            <span class="fr-desc">Custom essential oil blends &amp; hot stone therapy</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">💆</span>
+            <span class="fr-name">Deep Tissue Massage Suite</span>
+            <span class="fr-desc">Professional massage therapists — Swedish, Thai &amp; hot stone</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🧴</span>
+            <span class="fr-name">Face Mask Bar</span>
+            <span class="fr-desc">Custom-blended face masks mixed fresh for your skin type</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🔥</span>
+            <span class="fr-name">Infrared Sauna</span>
+            <span class="fr-desc">Detox &amp; glow with our cedar wood infrared sauna</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floor 3 -->
+      <div class="floor-card">
+        <div class="floor-header" style="background: linear-gradient(135deg, #b07acc, #d4a0e8);">
           <span class="floor-num">3</span>
-          Top Floor — Events, Lounge &amp; Relaxation
+          Third Floor — Events, Bridal &amp; Special Occasions
         </div>
         <div class="floor-rooms">
           <div class="floor-room">
             <span class="fr-icon">🎉</span>
-            <span class="fr-name">Party Hall</span>
-            <span class="fr-desc">Weekend events &amp; celebrations</span>
-          </div>
-          <div class="floor-room">
-            <span class="fr-icon">🛋️</span>
-            <span class="fr-name">Guest Lounge</span>
-            <span class="fr-desc">Relax, unwind &amp; wait in style</span>
+            <span class="fr-name">Grand Party Hall</span>
+            <span class="fr-desc">Weekend celebrations, birthday glam parties &amp; VIP events</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">🪞</span>
             <span class="fr-name">Bridal Suite</span>
-            <span class="fr-desc">Private special occasion room</span>
+            <span class="fr-desc">Private bridal prep room with full-length mirrors &amp; champagne</span>
           </div>
           <div class="floor-room">
-            <span class="fr-icon">🧘</span>
-            <span class="fr-name">Meditation &amp; Zen</span>
-            <span class="fr-desc">Quiet room for peace &amp; calm</span>
+            <span class="fr-icon">👰</span>
+            <span class="fr-name">Bridal Party Room</span>
+            <span class="fr-desc">Seats 8 bridesmaids — everyone gets pampered together</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🛋️</span>
+            <span class="fr-name">VIP Guest Lounge</span>
+            <span class="fr-desc">Plush velvet seating, magazines, drinks &amp; snack service</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🎂</span>
+            <span class="fr-name">Celebration Room</span>
+            <span class="fr-desc">Birthday makeovers, quincea&ntilde;era prep, prom glam</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">📸</span>
-            <span class="fr-name">Photo Room</span>
-            <span class="fr-desc">Show off your new look</span>
+            <span class="fr-name">Glam Photo Studio</span>
+            <span class="fr-desc">Show off your new look with professional lighting &amp; mirrors</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🎵</span>
+            <span class="fr-name">DJ &amp; Music Lounge</span>
+            <span class="fr-desc">Live DJ on event nights — curated playlists all day</span>
           </div>
         </div>
       </div>
@@ -1117,33 +1689,48 @@
       <div class="floor-card">
         <div class="floor-header">
           <span class="floor-num">2</span>
-          Second Floor — Glam &amp; Style
+          Second Floor — Glam, Style &amp; Beauty
         </div>
         <div class="floor-rooms">
           <div class="floor-room">
             <span class="fr-icon">💄</span>
-            <span class="fr-name">Makeup Room</span>
-            <span class="fr-desc">Full glam artistry</span>
+            <span class="fr-name">Luxury Makeup Room</span>
+            <span class="fr-desc">Full glam artistry with Fenty, Charlotte Tilbury &amp; Dior products</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">👗</span>
-            <span class="fr-name">Dress-Up Room</span>
-            <span class="fr-desc">Outfits &amp; styling</span>
+            <span class="fr-name">Dress-Up &amp; Styling Room</span>
+            <span class="fr-desc">Curated outfits, accessories &amp; personal stylist</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">💅</span>
-            <span class="fr-name">Nail Room</span>
-            <span class="fr-desc">Mani, pedi, &amp; nail art</span>
+            <span class="fr-name">Nail Art Studio</span>
+            <span class="fr-desc">Gel, acrylics, chrome, 3D nail art — every design imaginable</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">👁️</span>
-            <span class="fr-name">Lash &amp; Brow</span>
-            <span class="fr-desc">Extensions &amp; shaping</span>
+            <span class="fr-name">Lash &amp; Brow Lounge</span>
+            <span class="fr-desc">Lash extensions, lifts, brow lamination &amp; microblading</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">☀️</span>
-            <span class="fr-name">Tanning Room</span>
-            <span class="fr-desc">Spray tans &amp; glow</span>
+            <span class="fr-name">Tanning Suite</span>
+            <span class="fr-desc">Luxury spray tans &amp; bronzing — custom color match</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🫧</span>
+            <span class="fr-name">Waxing Room</span>
+            <span class="fr-desc">Private, comfortable &amp; uses only gentle, organic wax</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🎨</span>
+            <span class="fr-name">Color &amp; Highlights Lab</span>
+            <span class="fr-desc">Balayage, ombre, vivid colors — by master colorists</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">✨</span>
+            <span class="fr-name">Skin Glow Room</span>
+            <span class="fr-desc">LED light therapy, microdermabrasion &amp; chemical peels</span>
           </div>
         </div>
       </div>
@@ -1152,59 +1739,54 @@
       <div class="floor-card">
         <div class="floor-header" style="background: linear-gradient(135deg, #8a6b6b, #a07070);">
           <span class="floor-num">1</span>
-          Ground Floor — Welcome &amp; Core Services
+          Ground Floor — Welcome, Core Services &amp; Cafe
         </div>
         <div class="floor-rooms">
           <div class="floor-room">
             <span class="fr-icon">🚪</span>
-            <span class="fr-name">Reception</span>
-            <span class="fr-desc">Check in &amp; welcome</span>
+            <span class="fr-name">Grand Reception</span>
+            <span class="fr-desc">Marble lobby with crystal chandelier, check-in &amp; concierge</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">🛁</span>
-            <span class="fr-name">Wash &amp; Bath</span>
-            <span class="fr-desc">Bath bombs &amp; hair wash</span>
+            <span class="fr-name">Wash &amp; Bath Room</span>
+            <span class="fr-desc">Luxury bath bombs, hair wash stations &amp; scalp massages</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">✂️</span>
-            <span class="fr-name">Hair Styling</span>
-            <span class="fr-desc">Cuts, braids, blowouts</span>
-          </div>
-          <div class="floor-room">
-            <span class="fr-icon">🎨</span>
-            <span class="fr-name">Color Lab</span>
-            <span class="fr-desc">Highlights &amp; color</span>
-          </div>
-          <div class="floor-room">
-            <span class="fr-icon">🧖</span>
-            <span class="fr-name">Spa &amp; Facials</span>
-            <span class="fr-desc">Skin care treatments</span>
+            <span class="fr-name">Hair Styling Suite</span>
+            <span class="fr-desc">Cuts, braids, blowouts, updos &amp; extensions by master stylists</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">💆</span>
             <span class="fr-name">Care Room</span>
-            <span class="fr-desc">Scalp &amp; grooming</span>
+            <span class="fr-desc">Scalp treatments, beard grooming &amp; deep conditioning</span>
           </div>
           <div class="floor-room">
-            <span class="fr-icon">🌿</span>
-            <span class="fr-name">Aromatherapy</span>
-            <span class="fr-desc">Essential oils &amp; calm</span>
-          </div>
-          <div class="floor-room">
-            <span class="fr-icon">🫧</span>
-            <span class="fr-name">Waxing Room</span>
-            <span class="fr-desc">Private &amp; comfortable</span>
+            <span class="fr-icon">🧖</span>
+            <span class="fr-name">Express Facial Room</span>
+            <span class="fr-desc">Quick 20-minute glow-up facials for busy guests</span>
           </div>
           <div class="floor-room">
             <span class="fr-icon">🍩</span>
-            <span class="fr-name">Snack Shop &amp; Cafe</span>
-            <span class="fr-desc">Treats, coffee &amp; drinks</span>
+            <span class="fr-name">Snack Shop &amp; Luxury Cafe</span>
+            <span class="fr-desc">Gourmet treats, artisan coffee, fresh juices &amp; pastries</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🛍️</span>
+            <span class="fr-name">Beauty Boutique</span>
+            <span class="fr-desc">Shop salon-grade products, skincare &amp; accessories to take home</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">👶</span>
+            <span class="fr-name">Kids Corner</span>
+            <span class="fr-desc">Fun mini-makeovers &amp; play area for little ones while parents relax</span>
           </div>
         </div>
       </div>
 
       <div class="elevator-badge">
-        <span>🛗</span> Elevator access on every floor — fully accessible for all guests
+        <span>🛗</span> Elevator access on every floor — fully accessible for all guests | Private VIP elevator to Rooftop Penthouse
       </div>
     </div>
   </div>
