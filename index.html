@@ -52,14 +52,15 @@
 
     .nav-links {
       display: flex;
-      gap: 2rem;
+      gap: 1.4rem;
       list-style: none;
+      flex-wrap: wrap;
     }
 
     .nav-links a {
       text-decoration: none;
       color: var(--mid);
-      font-size: .95rem;
+      font-size: .9rem;
       letter-spacing: .04em;
       transition: color .2s;
     }
@@ -81,7 +82,6 @@
       overflow: hidden;
     }
 
-    /* decorative petals */
     .hero::before, .hero::after {
       content: '';
       position: absolute;
@@ -174,7 +174,7 @@
     .section-sub {
       text-align: center;
       color: var(--mid);
-      max-width: 560px;
+      max-width: 600px;
       margin: 0 auto 3rem;
     }
 
@@ -245,15 +245,14 @@
 
     .rooms-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.6rem;
     }
 
     .room-card {
       background: #fff;
       border-radius: var(--radius);
-      padding: 2rem 1.5rem;
-      text-align: center;
+      overflow: hidden;
       border: 1px solid var(--blush);
       box-shadow: var(--shadow);
       transition: transform .2s, box-shadow .2s;
@@ -264,10 +263,30 @@
       box-shadow: 0 12px 36px rgba(60,20,20,.14);
     }
 
-    .room-icon {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      display: block;
+    .room-img {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      position: relative;
+    }
+
+    .room-img-label {
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      background: rgba(255,255,255,.85);
+      color: var(--mid);
+      font-size: .7rem;
+      padding: .2rem .6rem;
+      border-radius: 99px;
+      letter-spacing: .05em;
+    }
+
+    .room-card-body {
+      padding: 1.5rem;
+      text-align: center;
     }
 
     .room-card h3 {
@@ -277,6 +296,154 @@
     }
 
     .room-card p { color: var(--mid); font-size: .92rem; }
+
+    /* ── SNACK SHOP ── */
+    #snackshop { background: var(--light); }
+
+    .snack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.4rem;
+      margin-top: 1rem;
+    }
+
+    .snack-item {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      border: 1px solid var(--blush);
+      box-shadow: var(--shadow);
+      transition: transform .2s;
+    }
+
+    .snack-item:hover { transform: translateY(-3px); }
+
+    .snack-item .snack-icon { font-size: 2.4rem; display: block; margin-bottom: .6rem; }
+    .snack-item h4 { color: var(--dark); font-size: .95rem; }
+    .snack-item p  { color: var(--mid); font-size: .82rem; margin-top: .3rem; }
+
+    /* ── BUILDING / FLOOR PLAN ── */
+    #building { background: var(--cream); }
+
+    .building-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .floor-card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--blush);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .floor-header {
+      background: linear-gradient(135deg, var(--rose), #d4929a);
+      color: #fff;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .floor-header .floor-num {
+      background: rgba(255,255,255,.25);
+      border-radius: 50%;
+      width: 42px; height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .floor-rooms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      padding: 1.5rem;
+    }
+
+    .floor-room {
+      background: var(--light);
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .floor-room .fr-icon { font-size: 1.8rem; display: block; margin-bottom: .4rem; }
+    .floor-room .fr-name { font-size: .9rem; color: var(--dark); font-weight: bold; }
+    .floor-room .fr-desc { font-size: .78rem; color: var(--mid); margin-top: .2rem; }
+
+    .elevator-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .6rem;
+      padding: 1rem;
+      background: linear-gradient(90deg, var(--blush), var(--cream));
+      color: var(--mid);
+      font-size: .9rem;
+      border-radius: var(--radius);
+      margin-top: 1rem;
+    }
+
+    .elevator-badge span { font-size: 1.4rem; }
+
+    /* ── WEEKEND PARTIES ── */
+    #events {
+      background: linear-gradient(135deg, #fde8ea 0%, #fdf0e6 50%, #f9eef6 100%);
+    }
+
+    .events-banner {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 3rem 2.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      border: 2px solid var(--blush);
+    }
+
+    .events-banner .party-emoji {
+      font-size: 3.5rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .events-banner h3 {
+      font-size: 1.6rem;
+      color: var(--dark);
+      margin-bottom: .8rem;
+    }
+
+    .events-banner p { color: var(--mid); margin-bottom: .6rem; }
+
+    .party-days {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .party-day {
+      background: linear-gradient(135deg, var(--rose), #d4929a);
+      color: #fff;
+      padding: .7rem 1.6rem;
+      border-radius: 99px;
+      font-size: .95rem;
+      font-weight: bold;
+      letter-spacing: .04em;
+    }
 
     /* ── RULES ── */
     #rules { background: var(--light); }
@@ -307,15 +474,56 @@
     .rule-item h4 { color: var(--dark); margin-bottom: .25rem; }
     .rule-item p  { color: var(--mid); font-size: .9rem; }
 
-    /* ── JOIN US / EMPLOYEES ── */
+    /* ── SAFETY & SECURITY ── */
+    #safety {
+      background: linear-gradient(135deg, #3a2a2a 0%, #4a3535 100%);
+      color: #fff;
+    }
+
+    #safety .section-label { color: var(--gold); }
+    #safety .section-title { color: #fff; }
+    #safety .section-sub   { color: #d4b0b0; }
+    #safety .divider { background: linear-gradient(90deg, var(--gold), var(--rose)); }
+
+    .safety-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .safety-card {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      padding: 1.8rem 1.5rem;
+      text-align: center;
+    }
+
+    .safety-card .safety-icon { font-size: 2.4rem; display: block; margin-bottom: .8rem; }
+    .safety-card h3 { color: #fff; margin-bottom: .4rem; font-size: 1.05rem; }
+    .safety-card p  { color: #c0a0a0; font-size: .9rem; }
+
+    /* ── CAREERS ── */
     #careers { background: var(--cream); }
 
-    .traits-intro {
-      text-align: center;
-      color: var(--mid);
-      max-width: 600px;
+    .careers-warning {
+      background: linear-gradient(135deg, #fff3f4, #fff);
+      border: 2px solid var(--rose);
+      border-radius: var(--radius);
+      padding: 2rem;
+      max-width: 800px;
       margin: 0 auto 2.5rem;
+      text-align: center;
     }
+
+    .careers-warning h3 {
+      color: var(--rose);
+      font-size: 1.2rem;
+      margin-bottom: .8rem;
+    }
+
+    .careers-warning p { color: var(--mid); font-size: .95rem; margin-bottom: .4rem; }
+    .careers-warning strong { color: var(--dark); }
 
     .traits-grid {
       display: grid;
@@ -339,6 +547,39 @@
 
     .trait-card h3 { color: var(--dark); margin-bottom: .4rem; }
     .trait-card p  { color: var(--mid); font-size: .9rem; }
+
+    .training-section {
+      background: #fff;
+      border: 1px solid var(--blush);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      margin-top: 2.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .training-section h3 {
+      text-align: center;
+      color: var(--dark);
+      margin-bottom: 1.2rem;
+      font-size: 1.3rem;
+    }
+
+    .training-list {
+      list-style: none;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .training-list li {
+      padding: .8rem 0;
+      border-bottom: 1px solid var(--blush);
+      color: var(--mid);
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .training-list li span { font-size: 1.2rem; }
 
     .careers-cta {
       text-align: center;
@@ -437,10 +678,11 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 720px) {
       nav { padding: .8rem 1.2rem; }
-      .nav-links { gap: 1.2rem; }
+      .nav-links { gap: .8rem; font-size: .82rem; }
       .about-grid { grid-template-columns: 1fr; }
       .about-visual { height: 220px; font-size: 4rem; }
       .contact-grid { grid-template-columns: 1fr; }
+      .floor-rooms { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
@@ -452,7 +694,11 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Rooms</a></li>
+    <li><a href="#snackshop">Snack Shop</a></li>
+    <li><a href="#building">Our Building</a></li>
+    <li><a href="#events">Events</a></li>
     <li><a href="#rules">Rules</a></li>
+    <li><a href="#safety">Safety</a></li>
     <li><a href="#careers">Careers</a></li>
     <li><a href="#contact">Book Now</a></li>
   </ul>
@@ -462,7 +708,7 @@
 <section class="hero">
   <span class="hero-badge">Welcome to Your Sanctuary</span>
   <h1>Amyra's<br/><span>Glimmer Garden</span> Salon</h1>
-  <p>Step in and bloom. We wash, style, glam, and dress you up — so you walk out feeling completely refreshed and radiant.</p>
+  <p>Step in and bloom. We wash, style, glam, and dress you up — so you walk out feeling completely refreshed and radiant. Every beauty room you can dream of, all under one roof.</p>
   <a href="#contact" class="btn-primary">Book Your Visit</a>
   <div class="hero-flowers">🌸 🌺 🌼</div>
 </section>
@@ -476,16 +722,16 @@
         <h2>A Garden of Beauty &amp; Care</h2>
         <div class="divider"></div>
         <p>Amyra's Glimmer Garden Salon is your personal retreat — a warm, welcoming space where every customer is treated like royalty. From the moment you walk through our doors, we focus on making you feel comfortable, fresh, and absolutely gorgeous.</p>
-        <p>We offer a full range of beauty services across our dedicated rooms: hair care, makeup artistry, styling and dressing, and a relaxing wash experience that sets the tone for your whole visit.</p>
-        <p>Whether you're getting ready for a special occasion or just treating yourself, our skilled team is here to make it happen.</p>
+        <p>Our multi-floor building has every kind of beauty room you could dream of, an in-house snack shop, elevator access, and a team dedicated to giving you an unforgettable experience every single visit.</p>
+        <p>We want you to feel so special that you keep coming back again and again. That's our mission.</p>
         <div class="about-stats">
           <div class="stat-box">
-            <span class="num">5</span>
-            <span class="label">Specialty Rooms</span>
+            <span class="num">10+</span>
+            <span class="label">Beauty Rooms</span>
           </div>
           <div class="stat-box">
-            <span class="num">100%</span>
-            <span class="label">Guest Comfort</span>
+            <span class="num">3</span>
+            <span class="label">Floors</span>
           </div>
           <div class="stat-box">
             <span class="num">★ 5</span>
@@ -502,35 +748,317 @@
 <section id="services">
   <div class="container">
     <span class="section-label">What We Offer</span>
-    <h2 class="section-title">Our Specialty Rooms</h2>
+    <h2 class="section-title">Our Beauty Rooms</h2>
     <div class="divider"></div>
-    <p class="section-sub">Each room is designed to give you a dedicated, relaxing experience from head to toe.</p>
+    <p class="section-sub">Every beauty room you can dream of — all designed to give you a dedicated, luxurious experience from head to toe.</p>
 
     <div class="rooms-grid">
       <div class="room-card">
-        <span class="room-icon">🚿</span>
-        <h3>Wash &amp; Refresh Room</h3>
-        <p>Sit back and relax while we give your hair a deep cleanse and conditioning treatment. Leave feeling fresh and revitalized.</p>
+        <div class="room-img" style="background: linear-gradient(135deg, #d4f1f9, #a8e6f0);">
+          🚿
+          <span class="room-img-label">Ground Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Wash &amp; Refresh Room</h3>
+          <p>Sit back and relax while we give your hair a deep cleanse and conditioning. Leave feeling fresh and revitalized.</p>
+        </div>
       </div>
       <div class="room-card">
-        <span class="room-icon">💆</span>
-        <h3>Care Room</h3>
-        <p>A calming space for treatments, scalp care, and personal grooming. We take our time to make sure you feel truly pampered.</p>
+        <div class="room-img" style="background: linear-gradient(135deg, #e8d5f5, #d4b8eb);">
+          💆
+          <span class="room-img-label">Ground Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Care Room</h3>
+          <p>A calming space for treatments, scalp care, skin care, and personal grooming. We take our time to pamper you.</p>
+        </div>
       </div>
       <div class="room-card">
-        <span class="room-icon">💄</span>
-        <h3>Makeup Room</h3>
-        <p>From natural day looks to full glam, our makeup artists enhance your natural beauty for any occasion.</p>
+        <div class="room-img" style="background: linear-gradient(135deg, #fde8ea, #f5c6cb);">
+          💄
+          <span class="room-img-label">Second Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Makeup Room</h3>
+          <p>From natural day looks to full glam, our makeup artists enhance your natural beauty for any occasion.</p>
+        </div>
       </div>
       <div class="room-card">
-        <span class="room-icon">👗</span>
-        <h3>Dress-Up Room</h3>
-        <p>Try on outfits, get styling advice, and put together the perfect look to match your freshly done hair and makeup.</p>
+        <div class="room-img" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0);">
+          👗
+          <span class="room-img-label">Second Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Dress-Up Room</h3>
+          <p>Try on outfits, get styling advice, and put together the perfect look to match your freshly done hair and makeup.</p>
+        </div>
       </div>
       <div class="room-card">
-        <span class="room-icon">✂️</span>
-        <h3>Hair Styling Room</h3>
-        <p>Cuts, curls, braids, blowouts, color, and more. Our stylists stay up to date on all the latest trends and techniques.</p>
+        <div class="room-img" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2);">
+          ✂️
+          <span class="room-img-label">Ground Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Hair Styling Room</h3>
+          <p>Cuts, curls, braids, blowouts, color, and more. Our stylists stay on top of all the latest trends.</p>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img" style="background: linear-gradient(135deg, #fce4ff, #e1bee7);">
+          💅
+          <span class="room-img-label">Second Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Nail Room</h3>
+          <p>Manicures, pedicures, gel, acrylics, nail art — get your nails done while you relax and enjoy a treat from our snack shop.</p>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img" style="background: linear-gradient(135deg, #e0f2f1, #b2dfdb);">
+          🧖
+          <span class="room-img-label">Ground Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Spa &amp; Facial Room</h3>
+          <p>Deep facials, masks, exfoliation, and relaxation treatments. Let us take care of your skin from start to finish.</p>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img" style="background: linear-gradient(135deg, #f3e5f5, #ce93d8);">
+          👁️
+          <span class="room-img-label">Second Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Lash &amp; Brow Studio</h3>
+          <p>Lash extensions, brow shaping, tinting, and lamination. Frame your face beautifully with our detail experts.</p>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img" style="background: linear-gradient(135deg, #fff8e1, #ffe082);">
+          🪞
+          <span class="room-img-label">Second Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Bridal &amp; Special Occasion Suite</h3>
+          <p>A private, luxurious suite for brides and special events. Full glam from head to toe in one beautiful room.</p>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img" style="background: linear-gradient(135deg, #e8eaf6, #c5cae9);">
+          🎨
+          <span class="room-img-label">Ground Floor</span>
+        </div>
+        <div class="room-card-body">
+          <h3>Color &amp; Highlights Lab</h3>
+          <p>Dedicated to hair coloring, highlights, balayage, and creative color work. Let us transform your look.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SNACK SHOP ── -->
+<section id="snackshop">
+  <div class="container">
+    <span class="section-label">Treat Yourself</span>
+    <h2 class="section-title">In-House Snack Shop &amp; Cafe</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Enjoy delicious treats while you get pampered. Our snack shop has all sorts of food and drinks available for every guest — right inside the salon.</p>
+
+    <div class="snack-grid">
+      <div class="snack-item">
+        <span class="snack-icon">🍩</span>
+        <h4>Donuts</h4>
+        <p>Fresh &amp; glazed</p>
+      </div>
+      <div class="snack-item">
+        <span class="snack-icon">🧁</span>
+        <h4>Cupcakes</h4>
+        <p>Assorted flavors</p>
+      </div>
+      <div class="snack-item">
+        <span class="snack-icon">☕</span>
+        <h4>Coffee &amp; Tea</h4>
+        <p>Hot or iced</p>
+      </div>
+      <div class="snack-item">
+        <span class="snack-icon">🧃</span>
+        <h4>Fresh Juices</h4>
+        <p>Fruit blends</p>
+      </div>
+      <div class="snack-item">
+        <span class="snack-icon">🍪</span>
+        <h4>Cookies</h4>
+        <p>Baked daily</p>
+      </div>
+      <div class="snack-item">
+        <span class="snack-icon">🥤</span>
+        <h4>Smoothies</h4>
+        <p>Fresh &amp; creamy</p>
+      </div>
+      <div class="snack-item">
+        <span class="snack-icon">🍫</span>
+        <h4>Chocolate</h4>
+        <p>Assorted bars</p>
+      </div>
+      <div class="snack-item">
+        <span class="snack-icon">🍦</span>
+        <h4>Ice Cream</h4>
+        <p>From our freezer</p>
+      </div>
+      <div class="snack-item">
+        <span class="snack-icon">🥐</span>
+        <h4>Pastries</h4>
+        <p>Croissants &amp; more</p>
+      </div>
+      <div class="snack-item">
+        <span class="snack-icon">🥗</span>
+        <h4>Light Bites</h4>
+        <p>Salads &amp; wraps</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BUILDING / FLOOR PLAN ── -->
+<section id="building">
+  <div class="container">
+    <span class="section-label">Our Space</span>
+    <h2 class="section-title">Explore the Building</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Our salon is a multi-floor building with spacious rooms, elevator access, and everything you need for the ultimate beauty experience.</p>
+
+    <div class="building-wrapper">
+      <!-- Floor 3 -->
+      <div class="floor-card">
+        <div class="floor-header" style="background: linear-gradient(135deg, var(--gold), #d4b85c);">
+          <span class="floor-num">3</span>
+          Top Floor — Events &amp; Lounge
+        </div>
+        <div class="floor-rooms">
+          <div class="floor-room">
+            <span class="fr-icon">🎉</span>
+            <span class="fr-name">Party Hall</span>
+            <span class="fr-desc">Weekend events &amp; celebrations</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🛋️</span>
+            <span class="fr-name">Guest Lounge</span>
+            <span class="fr-desc">Relax while you wait</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🪞</span>
+            <span class="fr-name">Bridal Suite</span>
+            <span class="fr-desc">Private special occasion room</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">📸</span>
+            <span class="fr-name">Photo Room</span>
+            <span class="fr-desc">Show off your new look</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floor 2 -->
+      <div class="floor-card">
+        <div class="floor-header">
+          <span class="floor-num">2</span>
+          Second Floor — Glam &amp; Style
+        </div>
+        <div class="floor-rooms">
+          <div class="floor-room">
+            <span class="fr-icon">💄</span>
+            <span class="fr-name">Makeup Room</span>
+            <span class="fr-desc">Full glam artistry</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">👗</span>
+            <span class="fr-name">Dress-Up Room</span>
+            <span class="fr-desc">Outfits &amp; styling</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">💅</span>
+            <span class="fr-name">Nail Room</span>
+            <span class="fr-desc">Mani, pedi, &amp; nail art</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">👁️</span>
+            <span class="fr-name">Lash &amp; Brow</span>
+            <span class="fr-desc">Extensions &amp; shaping</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floor 1 -->
+      <div class="floor-card">
+        <div class="floor-header" style="background: linear-gradient(135deg, #8a6b6b, #a07070);">
+          <span class="floor-num">1</span>
+          Ground Floor — Welcome &amp; Core Services
+        </div>
+        <div class="floor-rooms">
+          <div class="floor-room">
+            <span class="fr-icon">🚪</span>
+            <span class="fr-name">Reception</span>
+            <span class="fr-desc">Check in &amp; welcome</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🚿</span>
+            <span class="fr-name">Wash Room</span>
+            <span class="fr-desc">Deep cleanse &amp; refresh</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">✂️</span>
+            <span class="fr-name">Hair Styling</span>
+            <span class="fr-desc">Cuts, braids, blowouts</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🎨</span>
+            <span class="fr-name">Color Lab</span>
+            <span class="fr-desc">Highlights &amp; color</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🧖</span>
+            <span class="fr-name">Spa &amp; Facials</span>
+            <span class="fr-desc">Skin care &amp; treatments</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">💆</span>
+            <span class="fr-name">Care Room</span>
+            <span class="fr-desc">Scalp &amp; grooming</span>
+          </div>
+          <div class="floor-room">
+            <span class="fr-icon">🍩</span>
+            <span class="fr-name">Snack Shop</span>
+            <span class="fr-desc">Treats &amp; drinks</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="elevator-badge">
+        <span>🛗</span> Elevator access on every floor — fully accessible for all guests
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WEEKEND PARTIES ── -->
+<section id="events">
+  <div class="container">
+    <span class="section-label">Let's Celebrate</span>
+    <h2 class="section-title">Weekend Salon Parties</h2>
+    <div class="divider"></div>
+    <p class="section-sub">We're not just a salon — we're a vibe. Every weekend, we throw amazing parties in the salon for our guests and community.</p>
+
+    <div class="events-banner">
+      <span class="party-emoji">🎉🪩✨</span>
+      <h3>Party Every Weekend!</h3>
+      <p>Music, fun, beauty, and good vibes. Come get glammed up and celebrate with us every Friday, Saturday, and Sunday.</p>
+      <p>Themed events, seasonal celebrations, and special guest nights throughout the year.</p>
+
+      <div class="party-days">
+        <span class="party-day">🎵 Friday Night Glam</span>
+        <span class="party-day">💃 Saturday Bash</span>
+        <span class="party-day">🌸 Sunday Funday</span>
       </div>
     </div>
   </div>
@@ -577,7 +1105,7 @@
         <span class="rule-icon">🍱</span>
         <div>
           <h4>No Outside Food or Drinks</h4>
-          <p>To keep our salon clean and hygienic, we ask guests not to bring outside food or beverages. Light refreshments are provided by us.</p>
+          <p>To keep our salon clean and hygienic, we ask guests not to bring outside food or beverages. Enjoy treats from our in-house snack shop instead!</p>
         </div>
       </div>
       <div class="rule-item">
@@ -605,24 +1133,73 @@
   </div>
 </section>
 
+<!-- ── SAFETY & SECURITY ── -->
+<section id="safety">
+  <div class="container">
+    <span class="section-label">Your Protection</span>
+    <h2 class="section-title">Safety &amp; Security</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Your safety is our top priority. Our building is equipped with the latest security systems to keep you protected at all times.</p>
+
+    <div class="safety-grid">
+      <div class="safety-card">
+        <span class="safety-icon">🔒</span>
+        <h3>Secure Entry System</h3>
+        <p>Our doors have electronic locks and controlled access points. Only authorized guests and staff can enter the building.</p>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">📹</span>
+        <h3>24/7 Security Cameras</h3>
+        <p>CCTV surveillance throughout all common areas and hallways to ensure the safety of everyone in the building.</p>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">🚨</span>
+        <h3>Emergency Systems</h3>
+        <p>Fire alarms, sprinklers, emergency exits on every floor, and a fully stocked first aid station for any situation.</p>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">👮</span>
+        <h3>Trained Staff</h3>
+        <p>All employees are trained in emergency procedures, first aid, and customer safety protocols.</p>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">🔑</span>
+        <h3>Secure Storage</h3>
+        <p>Personal lockers available for guests to safely store their belongings while they enjoy our services.</p>
+      </div>
+      <div class="safety-card">
+        <span class="safety-icon">🧯</span>
+        <h3>Fire Safety</h3>
+        <p>Fire extinguishers on every floor, clearly marked exit routes, and regular safety inspections and drills.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ── CAREERS ── -->
 <section id="careers">
   <div class="container">
     <span class="section-label">Join Our Team</span>
-    <h2 class="section-title">What We Look for in an Employee</h2>
+    <h2 class="section-title">What We Expect from Every Employee</h2>
     <div class="divider"></div>
-    <p class="section-sub">At Amyra's Glimmer Garden, we don't just hire talent — we welcome passionate, caring people who love making others feel beautiful.</p>
+
+    <div class="careers-warning">
+      <h3>Important: Our Standards Are Non-Negotiable</h3>
+      <p><strong>No clumsiness. No lateness. No excuses.</strong></p>
+      <p>We expect every team member to show up on time, be fully prepared, and deliver world-class service. Repeated lateness, carelessness, or unreliable behavior <strong>will result in termination.</strong></p>
+      <p>We need people we can <strong>count on 100%</strong> to take care of our customers and make them feel like the most special person in the room.</p>
+    </div>
 
     <div class="traits-grid">
       <div class="trait-card">
         <span class="trait-icon">💖</span>
         <h3>Passion for Beauty</h3>
-        <p>You genuinely love what you do — whether it's hair, makeup, styling, or customer care. That love shows in your work.</p>
+        <p>You genuinely love what you do — whether it's hair, makeup, nails, or customer care. That passion shows in every client interaction.</p>
       </div>
       <div class="trait-card">
         <span class="trait-icon">😊</span>
         <h3>Warm &amp; Welcoming</h3>
-        <p>You greet every client with a smile and make them feel at ease the moment they walk in. Friendliness is a must.</p>
+        <p>You greet every client with a smile and make them feel like royalty. Our customers should always want to come back because of YOU.</p>
       </div>
       <div class="trait-card">
         <span class="trait-icon">🎨</span>
@@ -631,23 +1208,33 @@
       </div>
       <div class="trait-card">
         <span class="trait-icon">⏱️</span>
-        <h3>Punctual &amp; Reliable</h3>
-        <p>You show up on time, every time. Our clients depend on us, and we depend on you. Consistency is key.</p>
+        <h3>Always On Time</h3>
+        <p>You show up on time, every single time. No exceptions. Our clients depend on us, and lateness is not tolerated.</p>
       </div>
       <div class="trait-card">
         <span class="trait-icon">🧼</span>
         <h3>Clean &amp; Professional</h3>
-        <p>You maintain a tidy workspace and a professional appearance. Hygiene standards are non-negotiable in our salon.</p>
+        <p>You maintain a tidy workspace and professional appearance. Hygiene standards are non-negotiable in our salon.</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-icon">🤲</span>
+        <h3>Careful &amp; Precise</h3>
+        <p>No clumsiness allowed. Every service you deliver must be careful, intentional, and up to our high standards.</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-icon">🌟</span>
+        <h3>Make Clients Feel Special</h3>
+        <p>Go above and beyond so every customer feels like a VIP. We want them to leave saying "I'm definitely coming back."</p>
+      </div>
+      <div class="trait-card">
+        <span class="trait-icon">🤝</span>
+        <h3>Dependable &amp; Trustworthy</h3>
+        <p>We need to rely on you completely. You handle clients, products, and responsibilities with care and integrity.</p>
       </div>
       <div class="trait-card">
         <span class="trait-icon">👂</span>
         <h3>A Great Listener</h3>
-        <p>You listen to what clients want and deliver it. You ask the right questions and never assume — every client is unique.</p>
-      </div>
-      <div class="trait-card">
-        <span class="trait-icon">🌱</span>
-        <h3>Eager to Grow</h3>
-        <p>You welcome feedback, keep learning, and are always looking to improve your craft and serve clients better.</p>
+        <p>You listen to what clients want and deliver exactly that. Ask the right questions — every client is unique.</p>
       </div>
       <div class="trait-card">
         <span class="trait-icon">🤝</span>
@@ -656,8 +1243,24 @@
       </div>
     </div>
 
+    <div class="training-section">
+      <h3>Mandatory Training Program</h3>
+      <p style="text-align:center; color: var(--mid); margin-bottom: 1.5rem;">
+        Every new employee goes through our comprehensive training program before working with clients.
+      </p>
+      <ul class="training-list">
+        <li><span>📋</span> Orientation &amp; salon policies training</li>
+        <li><span>✂️</span> Hands-on skills assessment in your specialty</li>
+        <li><span>💬</span> Customer service &amp; communication workshop</li>
+        <li><span>🧴</span> Product knowledge &amp; proper usage training</li>
+        <li><span>🧯</span> Safety, hygiene, &amp; emergency procedures</li>
+        <li><span>👩‍🏫</span> Shadowing experienced team members</li>
+        <li><span>📈</span> Ongoing skill development sessions (monthly)</li>
+      </ul>
+    </div>
+
     <div class="careers-cta">
-      <p style="color: var(--mid); margin-bottom: 1.2rem;">Think you'd be a great fit? We'd love to hear from you!</p>
+      <p style="color: var(--mid); margin-bottom: 1.2rem;">Think you have what it takes? We'd love to hear from you!</p>
       <a href="#contact" class="btn-outline">Apply Now</a>
     </div>
   </div>
@@ -678,9 +1281,10 @@
         <p>Your local beauty destination</p>
         <br/>
         <h3>Hours</h3>
-        <p>🕐 <strong>Monday – Friday:</strong> 9:00 AM – 7:00 PM</p>
-        <p>🕐 <strong>Saturday:</strong> 8:00 AM – 6:00 PM</p>
-        <p>🕐 <strong>Sunday:</strong> 10:00 AM – 4:00 PM</p>
+        <p>🕐 <strong>Monday – Thursday:</strong> 9:00 AM – 7:00 PM</p>
+        <p>🕐 <strong>Friday:</strong> 9:00 AM – 10:00 PM (Party Night!)</p>
+        <p>🕐 <strong>Saturday:</strong> 8:00 AM – 10:00 PM (Party Night!)</p>
+        <p>🕐 <strong>Sunday:</strong> 10:00 AM – 8:00 PM (Funday!)</p>
         <br/>
         <h3>Contact</h3>
         <p>📞 <strong>Call or Text:</strong> (Your Number Here)</p>
@@ -692,7 +1296,7 @@
         <input type="text"     placeholder="Your Full Name"     required />
         <input type="email"    placeholder="Your Email"         required />
         <input type="tel"      placeholder="Your Phone Number"  />
-        <input type="text"     placeholder="Service You'd Like (e.g. Hair Styling)" />
+        <input type="text"     placeholder="Service You'd Like (e.g. Hair Styling, Nails, Makeup)" />
         <textarea             placeholder="Any special requests or questions?"></textarea>
         <button type="submit">Send Booking Request ✨</button>
         <p id="form-msg" style="text-align:center; color: #f2d4d7; font-size:.9rem; display:none;">
@@ -705,7 +1309,7 @@
 
 <!-- ── FOOTER ── -->
 <footer>
-  <p>© 2024 <span>Amyra's Glimmer Garden Salon</span>. All rights reserved. Made with 🌺 and love.</p>
+  <p>© 2026 <span>Amyra's Glimmer Garden Salon</span>. All rights reserved. Made with 🌺 and love.</p>
 </footer>
 
 <script>
